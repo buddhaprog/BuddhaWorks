@@ -1,0 +1,31 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+    <div class="sidebar-module sidebar-module-inset">
+        <h4>About</h4>
+        <p>This project demonstrates the efforts of <em>Rob Helvey and is currently in progress</em>. 
+            All credit to getting me here should be given to my Benevolent and Patient instructors, from the SWCG, 
+            <em> Sadukie and Eric Ward</em> and to my Brother Eric.</p>
+    </div>
+    <div class="sidebar-module">
+        <h4>Recent Blog</h4>
+        <ol id="blogtable" class="list-unstyled">
+        </ol>
+    </div>
+    <div class="sidebar-module">
+        <h4>find us on:</h4>
+        <ol class="list-unstyled">
+            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            <li><a href="https://www.facebook.com/officialhenryrollins" target="_blank">Rollins Facebook</a></li>
+            <li><a href="https://www.linkedin.com/profile/view?id=6465215&trk=hp-identity-name" target="_blank">linkedin</a></li>
+        </ol>
+    </div>
+    <div class="sidebar-module">
+        <h4></h4>
+        <ol class="list-unstyled">
+            <li>Photo credits</li>
+            <li><a href="https://www.stuckincustoms.com/" target="_blank">Trey Ratcliff</a></li>
+        </ol>
+    </div>
+</div><!-- /.blog-sidebar -->
