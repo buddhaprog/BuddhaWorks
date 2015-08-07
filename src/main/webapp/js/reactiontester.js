@@ -15,3 +15,4 @@ document.getElementById('textCreator').onclick = function () {
 document.getElementById('emptyDiv').innerHTML="<ul><li>Cat</li><li>Dog</li></ul>";
 };
 
+
