@@ -25,9 +25,9 @@
                     <hr>
                 </div>
                 <div class="row">
-                   
+
                     <div class="col-sm-8 blog-main">
-                       <div class="textback">
+                        <div class="textback">
                             <div>${pageContent}</div>
                             <h1><img src="${pageContext.request.contextPath}/img/whitetest.jpg" alt="BuddhaWorks" width="50" height="50" class="morph">Welcome<img src="${pageContext.request.contextPath}/img/whitetest.jpg" alt="BuddhaWorks" width="50" height="50" class="morph"></h1>
                             <hr>
@@ -60,6 +60,7 @@
                                 <li> tinymce</li>
                                 <li>  tomcat</li>
                                 <li>  maven</li>
+                                <li>  php</li>
                             </ul>
                             <p><em>Keep in mind, This is still a work in progress.</em></p>
 

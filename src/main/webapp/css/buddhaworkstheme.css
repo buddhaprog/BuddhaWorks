@@ -289,6 +289,7 @@ html, body {
        -o-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
           transition: all 0.5s ease;
+          margin:10px;
 }
 
 .morph:hover {
@@ -394,3 +395,5 @@ html, body {
 .login-help {
 	font-size: 12px;
 }
+
+

@@ -23,8 +23,14 @@ public class HomeController {
         return "homepage";
     }
     
-    
-    
+    @RequestMapping(value={"/bbcDupe"}, method=RequestMethod.GET)
+    public String displayBbcDupe() {
+        return "bbcDupe";
+    }
+    @RequestMapping(value={"/jsreactiontester"}, method=RequestMethod.GET)
+    public String displayReactionTester() {
+        return "jsreactiontester";
+    }
     
     
 }
