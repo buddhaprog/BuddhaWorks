@@ -411,3 +411,7 @@ user-select: none; */
     display:none;
     position:relative; 
 }
+
+#switchImage{
+        margin-bottom: 40px;
+}

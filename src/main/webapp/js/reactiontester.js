@@ -3,7 +3,6 @@ document.getElementById('clearReactionShape').onclick = function () {
     document.getElementById(
             "redBox").style.display = "none";
 };
-var fiveTimes = 0;
 document.getElementById('reactionButton').onclick = function () {
     reactionGame();
 };
@@ -29,13 +28,9 @@ function reactionGame() {
             if (Math.random() > 0.5) {
                 document.getElementById(
                         "redBox").style.borderRadius = "100px";
-                fiveTimes++;
-                console.log(fiveTimes + "times");
             } else {
                 document.getElementById(
                         "redBox").style.borderRadius = "0";
-                fiveTimes++;
-                console.log(fiveTimes + "times");
             }
             var top = Math.random();
             top = top * 200;
@@ -196,9 +191,9 @@ document.getElementById('textAppender').onclick = function () {
 };
 //adds list to a div that contains nothing
 document.getElementById('textCreator').onclick = function () {
-        document.getElementById(
+    document.getElementById(
             'emptyDiv').innerHTML = "<ul><li>Cat</li><li>Dog</li></ul>";
-    
+
 };
 
 
