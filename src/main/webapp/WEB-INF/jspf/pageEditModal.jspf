@@ -16,7 +16,6 @@
                             <input type="text" class="form-control" id="edit-title" placeholder="Title">
                         </div>
                     </div>
-                    <!--</div>-->
                     <%@include file="tinyMCEScriptFragment.jspf" %>
                     <textarea id="edit-pagetext" name="edit-pagetext">
                     </textarea>

@@ -25,7 +25,6 @@
                     <hr>
                 </div>
                 <div class="row">
-
                     <div class="col-sm-8 blog-main">
                         <div class="textback">
                             <div>${pageContent}</div>
@@ -63,9 +62,7 @@
                                 <li>  php</li>
                             </ul>
                             <p><em>Keep in mind, This is still a work in progress.</em></p>
-
                             <hr>
-
                             <%--<%@include file="commentboxfragment.jspf"%>--%>
                         </div>
                     </div>
@@ -74,11 +71,8 @@
             </div>
         </div>
         <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
-        <script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/moment.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/buddhaworks.js"></script>        
+        <!-- Placed at the end of the document so the pages load faster -->
+        <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>
     </body>
 </html>
 

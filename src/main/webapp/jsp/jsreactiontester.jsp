@@ -20,7 +20,6 @@
         <link href="${pageContext.request.contextPath}/css/buddhaworkstheme.css" rel="stylesheet">
     </head>
     <body>
-
         <%@include file="../WEB-INF/jspf/navbarfragment.jspf"%>
         <div class="container">
             <div id="reactionTester">
@@ -117,11 +116,7 @@
             </div>
         </div>
         <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
-        <script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/moment.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/buddhaworks.js"></script>  
+        <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>
         <script src="${pageContext.request.contextPath}/js/reactiontester.js"></script>
     </body>
 </html>

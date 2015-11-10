@@ -1,3 +1,5 @@
+/* global tinyMCE, tinymce */
+
 $(document).ready(function () {
 
     loadblogs();

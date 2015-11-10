@@ -6,12 +6,12 @@
 <html>
     <head>
         <title class="pagetitle">Home Page</title>
-        <!-- Bootstrap core CSS -->
+                <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
-        <!-- SWC Icon -->
-        <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/icon.png">
-        <!--        TEAM 3 CSS-->
-        <link href="${pageContext.request.contextPath}/css/team3-template.css" rel="stylesheet">
+        <!-- BuddhaWorks Icon -->
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/whitetest.jpg">
+        <!--BuddhaWorks CSS-->
+        <link href="${pageContext.request.contextPath}/css/buddhaworkstheme.css" rel="stylesheet">
     </head>
     <body>
         <%@include file="../WEB-INF/jspf/navbarfragment.jspf" %>
@@ -76,12 +76,12 @@
                     </form>-->
                 </div>
             </div>
-        </div>
-        <script src="${pageContext.request.contextPath}/js/jquery-1.11.1.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/capstone.js"></script>
-<!--        <script src="${pageContext.request.contextPath}/js/tempJavaScriptFile.js"></script>
-        <script src="${pageContext.request.contextPath}/js/inProgressJavascriptFile.js"></script>-->
+        <!--</div>-->
+       <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>
+
+
     </body>
 </html>
 

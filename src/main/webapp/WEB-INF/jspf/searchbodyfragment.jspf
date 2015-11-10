@@ -1,18 +1,17 @@
-<%-- any content can be specified here e.g.: --%>
-<%@ page pageEncoding="UTF-8" %>
+<h2 style="text-align: center">Search Results</h2>
+<hr>
 <div class="container">
     <div class="blog-header">
-        <h5 class="blog-title-search"> Your search has returned the following:</h1>
-            <hr>
+        <h5 class="blog-title-search"> Your search has returned the following:</h5>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+            <div class="blog-post">
+                <div class="search-results">
+                </div>
             </div>
-            <div class="row">
-                <div class="col-sm-8 blog-main">
-                    <div class="blog-post">
-                        <div class="search-results">
-                        </div>
-                    </div>
-                </div><!-- /.blog-main -->
-                <!--                    sidebar-->
-                <%@include file="sidebarfragment.jspf"%>
-            </div><!-- /.row -->
-    </div><!-- /.container -->
+        </div>
+        <%@include file="sidebarfragment.jspf"%>
+    </div><!-- /.row -->
+</div><!-- /.container -->

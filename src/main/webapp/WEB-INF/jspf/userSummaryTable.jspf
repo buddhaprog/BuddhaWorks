@@ -1,5 +1,4 @@
 <!--Going to include this with another jsp so calling it fragment at the end of it-->
-
 <table id="userTable" class="table table-hover">
     <tr>
         <th width="20%">Name</th>

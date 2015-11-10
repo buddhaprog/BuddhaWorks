@@ -17,7 +17,6 @@
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/whitetest.jpg">
         <!--BuddhaWorks CSS-->
         <link href="${pageContext.request.contextPath}/css/bbcdupe.css" rel="stylesheet">
-
     </head>
     <body id="bbcbody">
         <div>
@@ -33,30 +32,14 @@
                         </div>
                         <div id="bbc-top-menu">
                             <ul >
-                                <li id="bbc-news">
-                                    News
-                                </li>
-                                <li id="bbc-sport">
-                                    Sport
-                                </li>
-                                <li id="bbc-weather">
-                                    Weather
-                                </li>
-                                <li id="bbc-iplayer">
-                                    iPlayer
-                                </li>
-                                <li class="bbc-white-border">
-                                    TV
-                                </li>
-                                <li class="bbc-white-border">
-                                    Radio
-                                </li>
-                                <li class="bbc-white-border">
-                                    More...
-                                </li>
-                                <li>
-                                    <input type="text" placeholder="Search" />
-                                </li>
+                                <li id="bbc-news">News</li>
+                                <li id="bbc-sport">Sport</li>
+                                <li id="bbc-weather">Weather</li>
+                                <li id="bbc-iplayer">iPlayer</li>
+                                <li class="bbc-white-border">TV</li>
+                                <li class="bbc-white-border">Radio</li>
+                                <li class="bbc-white-border">More...</li>
+                                <li><input type="text" placeholder="Search" /></li>
                             </ul>
                         </div>
                     </div>
@@ -169,13 +152,10 @@
                     </div>
                 </div>
             </div>
-            <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
         </div>
-        <script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/moment.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/buddhaworks.js"></script>        
+        <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>  
     </body>
 </html>
 

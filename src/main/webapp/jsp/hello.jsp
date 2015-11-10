@@ -8,27 +8,27 @@
         <title>Hello Controller Page</title>
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- SWC Icon -->
-        <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/icon.png">
-
+        <!-- BuddhaWorks Icon -->
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/whitetest.jpg">
+        <!--BuddhaWorks CSS-->
+        <link href="${pageContext.request.contextPath}/css/buddhaworkstheme.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <h1>Spring MVC Application from Archetype</h1>
             <hr/>
             <div class="navbar">
-                 <ul class="nav nav-tabs">
-                 <li role="presentation"><a href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
-                <li role="presentation" class="active"><a href="${pageContext.request.contextPath}/hello/sayhi">Hello Controller</a></li>
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
+                    <li role="presentation" class="active"><a href="${pageContext.request.contextPath}/hello/sayhi">Hello Controller</a></li>
                 </ul>    
             </div>
             <h2>Controller</h2>
             <h3>${message}</h3>
         </div>
+        <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="${pageContext.request.contextPath}/js/jquery-1.11.1.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+        <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>
 
     </body>
 </html>

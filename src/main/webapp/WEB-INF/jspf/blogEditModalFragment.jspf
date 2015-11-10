@@ -18,29 +18,29 @@
                             <input type="text" class="form-control" id="edit-title" placeholder="Title">
                         </div>
                     </div>
-<!--                    <div class="form-group">
-                        <label for="edit-user-id" class="col-md-4 control-label">
-                            Written By: 
-                        </label>-->
-                        <div class="col-md-8">
-                            <input type="hidden" class="form-control" id="edit-user-id" placeholder="Written By">
-                        </div>
-<!--                    </div>
-                    <div class="form-group">
-                        <label for="edit-blog-date-show" class="col-md-4 control-label">
-                            Written On:
-                        </label>-->
-                        <div class="col-md-8">
-                            <input type="hidden" class="form-control" id="edit-blog-date-show" placeholder="Written On">
-                        </div>
-<!--                    </div>
-                    <div class="form-group">
-                        <label for="edit-posted" class="col-md-4 control-label">
-                            Posted: 
-                        </label>-->
-                        <div class="col-md-8">
-                            <input type="hidden" class="form-control" id="edit-posted" placeholder="Posted">
-                        </div>
+                    <!--                    <div class="form-group">
+                                            <label for="edit-user-id" class="col-md-4 control-label">
+                                                Written By: 
+                                            </label>-->
+                    <div class="col-md-8">
+                        <input type="hidden" class="form-control" id="edit-user-id" placeholder="Written By">
+                    </div>
+                    <!--                    </div>
+                                        <div class="form-group">
+                                            <label for="edit-blog-date-show" class="col-md-4 control-label">
+                                                Written On:
+                                            </label>-->
+                    <div class="col-md-8">
+                        <input type="hidden" class="form-control" id="edit-blog-date-show" placeholder="Written On">
+                    </div>
+                    <!--                    </div>
+                                        <div class="form-group">
+                                            <label for="edit-posted" class="col-md-4 control-label">
+                                                Posted: 
+                                            </label>-->
+                    <div class="col-md-8">
+                        <input type="hidden" class="form-control" id="edit-posted" placeholder="Posted">
+                    </div>
                     <!--</div>-->
                     <%@include file="tinyMCEScriptFragment.jspf" %>
                     <textarea id="edit-blogtext" name="edit-blogtext">

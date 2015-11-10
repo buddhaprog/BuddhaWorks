@@ -6,6 +6,7 @@
 <html>
     <head>
         <title>Blog Page</title>
+        <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
         <!-- BuddhaWorks Icon -->
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/whitetest.jpg">
@@ -16,18 +17,14 @@
         <div id="bg">
             <img src="${pageContext.request.contextPath}/img/templebellshapetreyratcliff.jpg" alt="">
         </div>
+        <div>
         <%@include file="../WEB-INF/jspf/navbarfragment.jspf"%>
-       
         <%@include file="../WEB-INF/jspf/blogsummaryfragment.jspf"%>
+        </div>
         <%@include file="../WEB-INF/jspf/blogEditModalFragment.jspf"%>
-    
-        <!-- Placed at the end of the document so the pages load faster -->
         <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
-        <script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/moment.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/buddhaworks.js"></script>        
+        <!-- Placed at the end of the document so the pages load faster -->
+        <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>
     </body>
 </html>
 

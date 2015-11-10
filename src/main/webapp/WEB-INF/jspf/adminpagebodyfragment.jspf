@@ -26,8 +26,10 @@
                 <FORM>
                     <INPUT Type="BUTTON"  class="btn btn-success" VALUE="Add New Page" ONCLICK="window.location.href = '${pageContext.request.contextPath}/addNewPage'"> 
                 </FORM>
-            </div><!-- /.blog-post -->
-        </div><!-- /.blog-main -->
+            </div>
+                <!-- /.blog-post -->
+        </div>
+                <!-- /.blog-main -->
         <!--                    sidebar-->
         <%@include file="adminsidebarfragment.jspf"%>
     </div><!-- /.row -->
