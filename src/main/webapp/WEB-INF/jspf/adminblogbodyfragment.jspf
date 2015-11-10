@@ -2,33 +2,38 @@
 <%@ page pageEncoding="UTF-8" %>
 <div class="container">
     <div class="blog-header">
-        <h1 style="text-align: center">
+        <!--style="text-align: center"-->
+        <h1 class="blog-title">
             Manage Blogs
         </h1>
         <hr>
     </div>
     <div class="row">
         <div class="col-sm-8 blog-main">
-            <div class="blog-post">
-                <p class="blog-post-meta">
-                </p>
-                <h3 style="text-align: center"><strong>Blog Summary Table</strong></h3>
-                <table id="blogTable" class="table table-hover">
-                    <tr>
-                        <th width="55%">Title</th>
-                        <th width="15%">Edit</th>
-                        <th width="15%">Delete</th>
-                        <th width="15%">Posted</th>
-                        <!--<th width="15%">UnPost</th>-->
-                    </tr>
-                    <tbody id="blogRows"></tbody>
-                </table>
-                <FORM>
-                    <INPUT Type="BUTTON"  class="btn btn-success" VALUE="Add New Blog" ONCLICK="window.location.href = '${pageContext.request.contextPath}/addNewBlog'"> 
-                </FORM>
-            </div><!-- /.blog-post -->
-        </div><!-- /.blog-main -->
-        <!--                    sidebar-->
+            <div class="textback">
+                <div class="blog-post">
+                    <p class="blog-post-meta">
+                    </p>
+                    <h3 style="text-align: center"><strong>Blog Summary Table</strong></h3>
+                    <table id="blogTable" class="table table-hover">
+                        <tr>
+                            <th width="55%">Title</th>
+                            <th width="15%">Edit</th>
+                            <th width="15%">Delete</th>
+                            <th width="15%">Posted</th>
+                            <!--<th width="15%">UnPost</th>-->
+                        </tr>
+                        <tbody id="blogRows"></tbody>
+                    </table>
+                    <FORM>
+                        <INPUT Type="BUTTON"  class="btn btn-success" VALUE="Add New Blog" ONCLICK="window.location.href = '${pageContext.request.contextPath}/addNewBlog'"> 
+                    </FORM>
+                </div><!-- /.blog-post -->
+            </div><!-- /.blog-main -->
+
+            <!--                    sidebar-->
+
+        </div>
         <%@include file="adminsidebarfragment.jspf"%>
     </div><!-- /.row -->
 </div><!-- /.container -->

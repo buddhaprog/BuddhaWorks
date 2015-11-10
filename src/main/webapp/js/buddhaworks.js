@@ -119,7 +119,7 @@ $(document).ready(function () {
                 pageId: $('#edit-page-id').val(),
                 pageTitle: $('#edit-title').val(),
                 posted: $('#edit-posted').val(),
-                pageBody: (tinyMCE.activeEditor.getContent())
+                pageBody: (tinymce.activeEditor.getContent())
             }),
             headers: {
                 'Accept': 'application/json',
@@ -169,7 +169,7 @@ $(document).ready(function () {
 //                blogDate: $('#edit-blog-date').val(),
                 userId: $('#edit-user-id').val(),
                 posted: $('#edit-posted').val(),
-                blog: (tinyMCE.activeEditor.getContent())
+                blog: (tinymce.activeEditor.getContent())
             }),
             headers: {
                 'Accept': 'application/json',
@@ -295,7 +295,7 @@ function saveblogs() {
         url: 'blog',
         data: JSON.stringify({
             blogTitle: $('#title').val(),
-            blog: (tinyMCE.activeEditor.getContent())
+            blog: (tinymce.activeEditor.getContent())
         }),
         headers: {
             'Accept': 'application/json',
@@ -421,7 +421,7 @@ $('#editModal').on('show.bs.modal', function (event) {
         modal.find('#edit-posted').val(blog.posted);
 //        modal.find('#edit-blogtext').html(blog.blog);
 //        modal.find(tinyMCE.get('#edit-blogtext').(blog.blog)));
-        tinyMCE.activeEditor.setContent(blog.blog);
+        tinymce.activeEditor.setContent(blog.blog);
     });
 });
 
@@ -745,8 +745,8 @@ function clearunposteditems() {
 
 //PAGE ITEM FUNCTIONS!!!
 //load page
-function loadpages() {
-}
+//function loadpages() {
+//}
 
 //clear page
 function clearpages() {
@@ -779,7 +779,7 @@ function savePages() {
         url: 'page',
         data: JSON.stringify({
             pageTitle: $('#page-title').val(),
-            pageBody: (tinyMCE.activeEditor.getContent())
+            pageBody: (tinymce.activeEditor.getContent())
         }),
         headers: {
             'Accept': 'application/json',
@@ -788,8 +788,8 @@ function savePages() {
         'dataType': 'json'
     }).success(function () {
         $('#page-title').val('');
-        tinyMCE.init({selector: '#page-body'});
-        tinyMCE.activeEditor.setContent('');
+        tinymce.init({selector: '#page-body'});
+        tinymce.activeEditor.setContent('');
     });
 }
 
@@ -947,7 +947,7 @@ $('#editPageModal').on('show.bs.modal', function (event) {
         modal.find('#edit-page-id').val(page.pageId);
         modal.find('#edit-title').val(page.pageTitle);
         modal.find('#edit-posted').val(page.posted);
-        tinyMCE.activeEditor.setContent(page.pageBody);
+        tinymce.activeEditor.setContent(page.pageBody);
     });
 });
 
@@ -1164,8 +1164,8 @@ $('#detailsModal').on('show.bs.modal', function (event) {
 
 //PAGE ITEM FUNCTIONS!!!
 //load page
-function loadpages() {
-}
+//function loadpages() {
+//}
 
 //clear page
 function clearpages() {

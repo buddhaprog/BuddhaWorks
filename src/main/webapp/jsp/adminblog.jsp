@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="${pageContext.request.contextPath}/js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="${pageContext.request.contextPath}/js/tinymce/tinymce.min.js"></script>
         <script type="text/javascript">
             tinymce.init({
@@ -20,6 +21,9 @@
         <link href="${pageContext.request.contextPath}/css/buddhaworkstheme.css" rel="stylesheet">
     </head>
     <body>
+        <div id="bg">
+            <img src="${pageContext.request.contextPath}/img/bambootreyratcliff.jpg" alt="">
+        </div>
         <div>
             <%@include file="../WEB-INF/jspf/navbarfragment.jspf"%>
             <%@include file="../WEB-INF/jspf/adminblogbodyfragment.jspf"%>

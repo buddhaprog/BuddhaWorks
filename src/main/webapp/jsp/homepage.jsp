@@ -7,6 +7,7 @@
     <head>
         <title class="pagetitle">Home Page</title>
         <!-- Bootstrap core CSS -->
+        
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
         <!-- BuddhaWorks Icon -->
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/whitetest.jpg">
