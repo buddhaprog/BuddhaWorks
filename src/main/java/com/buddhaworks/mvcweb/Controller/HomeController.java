@@ -31,6 +31,9 @@ public class HomeController {
     public String displayReactionTester() {
         return "jsreactiontester";
     }
-    
+    @RequestMapping(value={"/jquery"}, method=RequestMethod.GET)
+    public String displayJquery() {
+        return "jquery";
+    }
     
 }

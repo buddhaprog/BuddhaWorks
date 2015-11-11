@@ -1,0 +1,18 @@
+<%-- any content can be specified here e.g.: --%>
+
+<div class="container">
+    <!--blog header does not show, work on this-->
+    <div class="blog-header">
+        <!--style="text-align: center"-->
+        <h1 class="blog-title">
+            Jquery
+        </h1>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+           testing 
+              
+    </div><!-- /.row -->
+</div><!-- /.container -->
+</div>
