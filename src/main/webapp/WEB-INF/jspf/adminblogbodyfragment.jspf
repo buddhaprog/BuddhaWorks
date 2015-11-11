@@ -1,6 +1,7 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 <div class="container">
+    <!--blog header does not show, work on this-->
     <div class="blog-header">
         <!--style="text-align: center"-->
         <h1 class="blog-title">

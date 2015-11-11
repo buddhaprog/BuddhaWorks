@@ -15,14 +15,18 @@
     min-width: 50%;
     min-height: 50%;
 }
+a{
+    color: #1f72ef;
+}
+
 /* unvisited link */
 a:link {
-    color: #FF0000;
+    color: #1f72ef;
 }
 
 /* visited link */
 a:visited {
-    color: #00FF00;
+    color: #083272;
 }
 
 /* mouse over link */
@@ -52,7 +56,8 @@ a:active {
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #000;
-    /*    background-color: #b1b1ff*/
+    font-weight: 700;
+        background-image: url("../img/metal-scratched.jpg");
 }
 
 h1, .h1,
@@ -171,7 +176,9 @@ html, body {
 /* Set the fixed height of the footer here */
 #push,
 #footer {
+    
     font-family: Impact, Charcoal, sans-serif;
+    font-weight:400;
     height: 50px;
     width: 100%;
     position: fixed; bottom: 0;
@@ -268,6 +275,7 @@ html, body {
     background: #000;
     border: #000 1px solid;
     font-family: Impact, Charcoal, sans-serif;
+    font-weight: 400;
 
 }
 .brand{
@@ -414,4 +422,8 @@ user-select: none; */
 
 #switchImage{
         margin-bottom: 40px;
+}
+.container {
+    padding-bottom: 20px;
+    
 }
