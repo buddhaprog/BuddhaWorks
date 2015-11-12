@@ -35,5 +35,8 @@ public class HomeController {
     public String displayJquery() {
         return "jquery";
     }
-    
+    @RequestMapping(value={"/resume"}, method=RequestMethod.GET)
+    public String displayResume() {
+        return "resume";
+    }
 }

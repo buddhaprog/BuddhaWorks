@@ -15,7 +15,7 @@
             <ul class="nav navbar-nav">
                 <li><a  href="${pageContext.request.contextPath}/homepage">Home</a></li>
                 <li><a href="${pageContext.request.contextPath}/blogsummarypage">Blog</a></li>
-                <li><a href="${pageContext.request.contextPath}/resumepage">Resume</a></li>
+                <li><a href="${pageContext.request.contextPath}/resume">Resume</a></li>
                <!--<li><a href="${pageContext.request.contextPath}/pagepage">Page</a></li>-->
 <!--                <li><a href="${pageContext.request.contextPath}/page3">no cat page BLANK</a></li>-->
                 <li class="dropdown">
