@@ -14,7 +14,7 @@ $(document).ready(function () {
     $('ul.nav a[href="' + url + '"]').parent().addClass('active');
     $('ul.nav a').filter(function () {
         return this.href == url;
-    }).parent().addClass('active');  
+    }).parent().addClass('active');
 
     $('#new-user-submit-button').click(function (event) {
 //        event.preventDefault();
@@ -70,7 +70,6 @@ $(document).ready(function () {
             loadUsers();
         });
     });
-
     $('#search-button').click(function (event) {
         event.preventDefault();
         $.ajax({
@@ -96,19 +95,16 @@ $(document).ready(function () {
             fillUserTable(data, status);
         });
     });
-
     $('#pager').click(function (event) {
         event.preventDefault();
         nextblog();
         previousblog();
-    }
-    );
+    });
     //add page button
     $('#page-add-button').click(function (event) {
         event.preventDefault();
         savePages();
     });
-
     //edit page button
     $('#page-edit-button').click(function (event) {
         event.preventDefault();
@@ -131,31 +127,23 @@ $(document).ready(function () {
             loadPostedPages();
         });
     });
-
     //delete page button
     $('#page-delete-button').click(function (event) {
         alert('Are you sure?');
-    }
-    );
-
+    });
     //post page button
     $('#page-post-button').click(function (event) {
         alert('Are you sure?');
-    }
-    );
-
-//unpost page button
+    });
+    //unpost page button
     $('#page-unpost-button').click(function (event) {
         alert('Are you sure?');
-    }
-    );
-
+    });
     //add blog button
     $('#blog-add-button').click(function (event) {
         event.preventDefault();
         saveblogs();
     });
-
     //blog edit button
     $('#blog-edit-button').click(function (event) {
         event.preventDefault();
@@ -182,50 +170,36 @@ $(document).ready(function () {
             loadUnpostedblogs();
         });
     });
-
-//remove blog button
+    //remove blog button
     $('#blog-delete-button').click(function (event) {
         alert('Are you sure?');
-    }
-    );
-
-//post blog button
+    });
+    //post blog button
     $('#blog-post-button').click(function (event) {
         event.preventDefault();
         saveblogs();
 //        window.location.href = "/CapstoneMVCProject/blogsummarypage";
-    }
-    );
-
-//unpost blog button
+    });
+    //unpost blog button
     $('#blog-unpost-button').click(function (event) {
         alert('Are you sure?');
-    }
-    );
-
+    });
     //delete comment button
     $('#comment-delete-button').click(function (event) {
-    }
-    );
-
-//new user button
+    });
+    //new user button
     $('#add-user-button').click(function (event) {
 
-    }
-    );
-
+    });
     //add comment button
     $('#comment-add-button').click(function (event) {
-    }
-    );
-
-
+    });
+    //login modal button
     $('#login-modal-button').click(function (event) {
         event.preventDefault();
         $('#login-modal').modal('show');
     });
-
-//search button
+    //search button
     $('#search-button').click(function (event) {
     });
 
@@ -239,52 +213,56 @@ $(document).ready(function () {
 //        }
 //    });
 
-jQuery(function($){
-	$('#datetimepicker6').datetimepicker({
-		defaultDate : "7/4/2015"
-	});
-	$('#datetimepicker7').datetimepicker({
-		defaultDate : "7/5/2015"
-	});
-	$("#datetimepicker6").on("dp.change", function(e) {
-		$('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-	});
-	$("#datetimepicker7").on("dp.change", function(e) {
-		$('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-	});
-	$('#datetimepicker6 input').click(function(event){
-	       $('#datetimepicker6').data("DateTimePicker").show();
-	    });
-	    
-	    $('#datetimepicker7 input').click(function(event){
-	       $('#datetimepicker7').data("DateTimePicker").show();
-	    });
+//datetime picker
+    jQuery(function ($) {
+        $('#datetimepicker6').datetimepicker({
+            defaultDate: "7/4/2015"
+        });
+        $('#datetimepicker7').datetimepicker({
+            defaultDate: "7/5/2015"
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+        $('#datetimepicker6 input').click(function (event) {
+            $('#datetimepicker6').data("DateTimePicker").show();
+        });
 
-	});
-jQuery(function($){
-	$('#datetimepicker8').datetimepicker({
-		defaultDate : "7/4/2015"
-	});
-	$('#datetimepicker9').datetimepicker({
-		defaultDate : "7/5/2015"
-	});
-	$("#datetimepicker8").on("dp.change", function(e) {
-		$('#datetimepicker8').data("DateTimePicker").minDate(e.date);
-	});
-	$("#datetimepicker9").on("dp.change", function(e) {
-		$('#datetimepicker8').data("DateTimePicker").maxDate(e.date);
-	});
-	/*$('#datetimepicker8 input').click(function(event){
-	       $('#datetimepicker8').data("DateTimePicker").show();
-	    });
-	    
-	    $('#datetimepicker9 input').click(function(event){
-	       $('#datetimepicker9').data("DateTimePicker").show();
-	    });*/
-	});
-	
+        $('#datetimepicker7 input').click(function (event) {
+            $('#datetimepicker7').data("DateTimePicker").show();
+        });
+
+    });
+    jQuery(function ($) {
+        $('#datetimepicker8').datetimepicker({
+            defaultDate: "7/4/2015"
+        });
+        $('#datetimepicker9').datetimepicker({
+            defaultDate: "7/5/2015"
+        });
+        $("#datetimepicker8").on("dp.change", function (e) {
+            $('#datetimepicker8').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker9").on("dp.change", function (e) {
+            $('#datetimepicker8').data("DateTimePicker").maxDate(e.date);
+        });
+        /*$('#datetimepicker8 input').click(function(event){
+         $('#datetimepicker8').data("DateTimePicker").show();
+         });
+         
+         $('#datetimepicker9 input').click(function(event){
+         $('#datetimepicker9').data("DateTimePicker").show();
+         });*/
+    });
 
 });
+
+
+
+
 
 
 //BLOG FUNCTIONS GO HERE!!!!
@@ -345,7 +323,8 @@ function fillblogbody(data, status) {
         var blogPar = truncBlog(blog.blog, blog.blogId);
         bbody.append($('<h2>').append($('<a>')
 //                .attr({'onClick': 'blogDetail(' + blog.blogId + ')'})
-                .attr({'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
+                .attr(
+                        {'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
                 .text(blog.blogTitle)))
                 .append($('<p>')
                         .html(blogPar))
@@ -369,25 +348,32 @@ function fillBlogTable(blogList, status) {
         bTable.append($('<tr>')
                 .append($('<td>')
                         .append($('<a>')
-                                .attr({'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
+                                .attr(
+                                        {'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
                                 .text(blog.blogTitle)
                                 )
                         )
                 .append($('<td>')
                         .append($('<a>')
-                                .attr({'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
+                                .attr(
+                                        {'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
                                 .text('Edit')
                                 )
                         )
                 .append($('<td>')
                         .append($('<a>')
-                                .attr({'onClick': 'deleteblog(' + blog.blogId + ')'})
-                                .text('Delete')
+                                .attr(
+                                        {'onClick': 'deleteblog(' + blog.blogId + ')'})
+                                .text(
+                                        'Delete')
                                 )
                         )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'onClick': 'postBlog(' + blog.blogId + ',' + blog.posted + ')'})
+                .append(
+                        $('<td>')
+                        .append(
+                                $('<a>')
+                                .attr(
+                                        {'onClick': 'postBlog(' + blog.blogId + ',' + blog.posted + ')'})
                                 .text(blog.posted)
                                 )
                         )
@@ -403,112 +389,128 @@ function clearBlogTable() {
     $('#blogRows').empty();
 }
 
-$('#editModal').on('show.bs.modal', function (event) {
-    var element = $(event.relatedTarget);
-    var blogId = element.data('blog-id');
-    var modal = $(this);
-    $.ajax({
-        type: 'GET',
-        url: 'blog/' + blogId
-    }).success(function (blog) {
-        modal.find('#blog-id').text(blog.blogId);
-        modal.find('#edit-blog-id').val(blog.blogId);
-        modal.find('#edit-title').val(blog.blogTitle);
-        modal.find('#edit-blog-date-show').val(blog.blogDate.monthValue + '/' + blog.blogDate.dayOfMonth + '/' + blog.blogDate.year);
+$('#editModal').on('show.bs.modal',function (event) {
+            var element = $(event.relatedTarget);
+            var blogId = element.data('blog-id');
+            var modal = $(this);
+            $.ajax({
+                type: 'GET',
+                url: 'blog/' + blogId
+            }).success(
+                    function (blog) {
+                        modal.find('#blog-id').
+                                text(blog.blogId);
+                        modal.find('#edit-blog-id').
+                                val(blog.blogId);
+                        modal.find('#edit-title').
+                                val(blog.blogTitle);
+                        modal.find('#edit-blog-date-show').
+                                val(blog.blogDate.monthValue + '/' + blog.blogDate.dayOfMonth + '/' + blog.blogDate.year);
 //        modal.find('#edit-blog-date').val(blog.blogDate.year + '/' + blog.blogDate.monthValue + '/' + blog.blogDate.dayOfMonth);
 //        modal.find('#edit-blog-date').val(blog.blogDate);
-        modal.find('#edit-user-id').val(blog.userId);
-        modal.find('#edit-posted').val(blog.posted);
+                        modal.find('#edit-user-id').
+                                val(blog.userId);
+                        modal.find('#edit-posted').
+                                val(blog.posted);
 //        modal.find('#edit-blogtext').html(blog.blog);
 //        modal.find(tinyMCE.get('#edit-blogtext').(blog.blog)));
-        tinymce.activeEditor.setContent(blog.blog);
-    });
-});
+                        tinymce.activeEditor.setContent(blog.blog);
+                    });
+        });
 
 //remove blog function
 function deleteblog(blogId) {
     var answer = confirm("Confirm?");
-
     if (answer) {
         $.ajax({
             type: 'DELETE',
             url: 'blog/' + blogId
-        }).success(function () {
-            loadallblogs();
-            loadblogs();
-            loadUnpostedblogs();
-        });
+        }).
+                success(
+                        function () {
+                            loadallblogs();
+                            loadblogs();
+                            loadUnpostedblogs();
+                        });
     }
 }
 
 function postBlog(blogId, posted) {
-
     if (posted) {
         $.ajax({
             type: 'PUT',
             url: 'unpostblog/' + blogId
-        }).success(function () {
-            loadallblogs();
-            loadblogs();
-            loadUnpostedblogs();
-        });
+        }).
+                success(
+                        function () {
+                            loadallblogs();
+                            loadblogs();
+                            loadUnpostedblogs();
+                        });
     } else {
         $.ajax({
             type: 'PUT',
             url: 'postblog/' + blogId
-        }).success(function () {
-            loadallblogs();
-            loadblogs();
-            loadUnpostedblogs();
-        });
+        }).
+                success(
+                        function () {
+                            loadallblogs();
+                            loadblogs();
+                            loadUnpostedblogs();
+                        });
     }
 }
 
 function truncBlog(blogBody, blogId) {
     var n = blogBody.indexOf("</p>");
     var link = "<a onClick='" + 'location.href="blogdetailpage?blogId=' + blogId + '"' + "'>" + "... see more</a>";
-    var showBlog = blogBody.substr(0, n + 4) + link;
+    var showBlog = blogBody.substr(0,n + 4) + link;
     return showBlog;
 }
 
-function fillBlogTable(blogList, status) {
+function fillBlogTable(blogList,status) {
     clearblogs();
     var bTable = $('#blogRows');
-    $.each(blogList, function (index, blog) {
-        bTable.append($('<tr>')
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
-                                .text(blog.blogTitle)
+    $.each(blogList, function (index,blog) {
+                bTable.append(
+                        $('<tr>')
+                        .append(
+                                $('<td>')
+                                .append(
+                                        $('<a>')
+                                        .attr({'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
+                                        .text(blog.blogTitle)
+                                        )
                                 )
-                        )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
-                                .text('Edit')
+                        .append(
+                                $('<td>')
+                                .append(
+                                        $('<a>')
+                                        .attr({'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
+                                        .text('Edit')
+                                        )
                                 )
-                        )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({
-                                    'onClick': 'deleteBlog(' + blog.blogId + ')'
-                                })
-                                .text('Delete')
+                        .append(
+                                $('<td>')
+                                .append(
+                                        $('<a>')
+                                        .attr(
+                                                {'onClick': 'deleteBlog(' + blog.blogId + ')'})
+                                        .text('Delete')
+                                        )
                                 )
-                        )
-                );
-    });
+                        );
+            });
 }
+
+
+
 
 //BLOG ITEM FUNCTIONS!!!!
 function nextblog() {
 }
 
 function previousblog() {
-}
-
-//post blog function
-function postblog() {
 }
 
 
@@ -529,62 +531,71 @@ function unpostblog() {
 //       return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
 //     } 
 //}
-function sortblogbydate(a, b) {
-    return parseLocalDate(a["blogDate"]) - parseLocalDate(b["blogDate"]);
+function sortblogbydate(
+        a,
+        b) {
+    return parseLocalDate(
+            a["blogDate"]) - parseLocalDate(
+            b["blogDate"]);
 }
 function getlastfiveblogs() {
     var blogdatelist = {"blogs": [Blog]};
-    blogdatelist["blogs"].sort(sortblogbydate);
+    blogdatelist["blogs"].sort(
+            sortblogbydate);
     var blogdatearray = [];
     var blogdatearraylength = 5;
-
     var recent1 = blogdatearray[0];
     var recent2 = blogdatearray[1];
     var recent3 = blogdatearray[2];
     var recent4 = blogdatearray[3];
     var recent5 = blogdatearray[4];
-
     for (var i = 0; i < blogdatearraylength; i++) {
-
     }
-
-
 }
 
 //load recent blog table
 function fillblogtable() {
-
     // clear the table so we don't repeat information
     clearBlogTable();
-    var blogtable = $('#blogtable');
+    var blogtable = $(
+            '#blogtable');
     // grab HTML element into which we're going to load the data
     var recentnumber = 0;
-    var bList = $('#recent' + recentnumber++);
+    var bList = $(
+            '#recent' + recentnumber++);
 
     // iterate through each of the JSON objects in the test data and render
     // them into the list
     $.ajax({
         url: 'blogs'
-    }).success(function (data, status) {
-        do {
-            $.ajax({
-                url: '/sidebarfragment'
-            }).success(function (data, status) {
-                $.each(data, function (index, blog) {
-                    bList.append($('ol')
-                            .append($('li')
-                                    .append($('<a>')
-                                            .attr({'data-blog-id': blog.blogId, 'data-target': '#blogtable'})
-                                            .text(blog.blogTitle)
-                                            )
-                                    )
-                            );
-                });
+    }).success(
+            function (data, status) {
+                do {
+                    $.ajax(
+                            {
+                                url: '/sidebarfragment'
+                            }).
+                            success(
+                                    function (data, status) {
+                                        $.each(data,function (index,blog) {
+                                                    bList.append(
+                                                            $('ol')
+                                                            .append(
+                                                                    $('li')
+                                                                    .append(
+                                                                            $('<a>')
+                                                                            .attr(
+                                                                                    {'data-blog-id': blog.blogId, 'data-target': '#blogtable'})
+                                                                            .text(blog.blogTitle)
+                                                                            )
+                                                                    )
+                                                            );
+                                                });
 
+                                    });
+                    recentnumber++;
+                } while (recentnumber < 5 + 1);
             });
-            recentnumber++;
-        } while (recentnumber < 5 + 1);
-    });
 }
 //get blog date range function
 
@@ -592,120 +603,156 @@ function fillblogtable() {
 
 //clear recent blog table
 function clearblogtable() {
-    $('#blogtable').empty();
+    $(
+            '#blogtable').
+            empty();
 }
 
 
 //USER FUNCTIONS
 function adduser() {
-    $('#addusermodal').modal('show');
+    $('#addusermodal').
+            modal('show');
 }
 
 function loadUsers() {
     $.ajax({
         url: 'users'
-    }).success(function (data, status) {
-        fillUserTable(data, status);
+    }).success(
+            function (
+                    data,
+                    status) {
+                fillUserTable(
+                        data,
+                        status);
 //        $.ajax({
 //            url: 'numContacts'
 //        }).success(function (numContacts, status) {
 //            $('#num-contacts').text(numContacts + ' Contacts in the database');
 //        });
-    });
+            });
 }
 
-function fillUserTable(userList, status) {
+function fillUserTable(userList,status) {
     //    clear the table so you don't repeat information
     clearUserTable();
 //grab html element into which we are going to write the data
     var uTable = $('#contentRows');
-    $.each(userList, function (index, user) {
-        uTable.append($('<tr>')
-                .append($('<td>')
+    $.each(userList, function (index,user) {
+                uTable.append(
+                        $('<tr>')
+                        .append(
+                                $('<td>')
 //        Dont have to clear the modal after each and every time, when dismissed the content goes away
-                        .append($('<a>')
-                                .attr({'data-user-id': user.userId, 'data-toggle': 'modal', 'data-target': '#detailsModal'})
-                                .text(user.firstName + ' ' + user.lastName)
+                                .append(
+                                        $('<a>')
+                                        .attr(
+                                                {'data-user-id': user.userId, 'data-toggle': 'modal', 'data-target': '#detailsModal'})
+                                        .text(user.firstName + ' ' + user.lastName)
+                                        )
                                 )
-                        )
-                .append($('<td>').text(user.userName))
+                        .append(
+                                $('<td>').
+                                text(user.userName))
 //                .append($('<td>').text(user.authority))
-                .append($('<td>').text(user.email))
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'data-user-id': user.userId, 'data-toggle': 'modal', 'data-target': '#editUserModal'})
-                                .text('Edit')
+                        .append(
+                                $('<td>').
+                                text(user.email))
+                        .append(
+                                $('<td>')
+                                .append(
+                                        $('<a>')
+                                        .attr(
+                                                {'data-user-id': user.userId, 'data-toggle': 'modal', 'data-target': '#editUserModal'})
+                                        .text('Edit')
+                                        )
                                 )
-                        )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({
-                                    'onClick': 'deleteUser(' + user.userId + ')'
-                                })
-                                .text('Delete')
+                        .append(
+                                $('<td>')
+                                .append(
+                                        $('<a>')
+                                        .attr(
+                                                {'onClick': 'deleteUser(' + user.userId + ')'
+                                                })
+                                        .text('Delete')
+                                        )
                                 )
-                        )
-                );
-    });
+                        );
+            });
 }
 
 function clearUserTable() {
     $('#contentRows').empty();
 }
 
-$('#detailsModal').on('show.bs.modal', function (event) {
+$('#detailsModal').
+        on('show.bs.modal',function (event) {
 //get the element that triggered the event
 //the anchor is the element/relatedTarget that is clicked on
 //UI is event driven programming, it sits there and waaits for something to happen
-    var element = $(event.relatedTarget);
-    var userId = element.data('user-id');
+                    var element = $(event.relatedTarget);
+                    var userId = element.data('user-id');
 //    PLACEHOLDER - use dummy data for now
 //  Called detailsModal about, and now you're putting it into the variable
-    var modal = $(this);
+                    var modal = $(this);
 //      make an ajax call to get contact information for given contact
-    $.ajax({
-        type: 'GET',
-        url: 'user/' + userId
-    }).success(function (user) {
-        modal.find('#user-id').text(user.userId);
-        modal.find('#user-first-name').text(user.firstName);
-        modal.find('#user-last-name').text(user.lastName);
-        modal.find('#user-user-name').text(user.userName);
-        modal.find('#user-email').text(user.email);
-        modal.find('#user-enabled').text(user.enabled);
-    });
-});
+                    $.ajax({
+                                type: 'GET',
+                                url: 'user/' + userId
+                            }).
+                            success(function (
+                                            user) {
+                                        modal.find('#user-id').
+                                                text(user.userId);
+                                        modal.find('#user-first-name').
+                                                text(user.firstName);
+                                        modal.find('#user-last-name').
+                                                text(user.lastName);
+                                        modal.find('#user-user-name').
+                                                text(user.userName);
+                                        modal.find('#user-email').
+                                                text(user.email);
+                                        modal.find('#user-enabled').
+                                                text(user.enabled);
+                                    });
+                });
 //this code runs in response to the show.bs.modaal event for the edit modal
-$('#editUserModal').on('show.bs.modal', function (event) {
-    var element = $(event.relatedTarget);
-    var userId = element.data('user-id');
-    var modal = $(this);
-    $.ajax({
-        type: 'GET',
-        url: 'user/' + userId
+$('#editUserModal').on('show.bs.modal',function (event) {
+                    var element = $(event.relatedTarget);
+                    var userId = element.data('user-id');
+                    var modal = $(this);
+                    $.ajax({
+                                type: 'GET',
+                                url: 'user/' + userId
 
-    }).success(function (user) {
-
-        modal.find('#user-id').text(user.userId);
-        modal.find('#edit-user-id').val(user.userId);
-        modal.find('#edit-first-name').val(user.firstName);
-        modal.find('#edit-last-name').val(user.lastName);
-        modal.find('#edit-user-name').val(user.userName);
-        modal.find('#edit-email').val(user.email);
-        modal.find('#edit-enabled').val(user.enabled);
-    });
-});
+                            }).
+                            success(function (user) {
+                                        modal.find('#user-id').
+                                                text(user.userId);
+                                        modal.find('#edit-user-id').
+                                                val(user.userId);
+                                        modal.find('#edit-first-name').
+                                                val(user.firstName);
+                                        modal.find('#edit-last-name').
+                                                val(user.lastName);
+                                        modal.find('#edit-user-name').
+                                                val(user.userName);
+                                        modal.find('#edit-email').
+                                                val(user.email);
+                                        modal.find('#edit-enabled').
+                                                val(user.enabled);
+                                    });
+                });
 
 function deleteUser(userId) {
     var answer = confirm("Confirm?");
-
     if (answer) {
         $.ajax({
-            type: 'DELETE',
-            url: 'user/' + userId
-        }).success(function () {
-            loadUsers();
-        });
+                    type: 'DELETE',
+                    url: 'user/' + userId
+                }).
+                success(function () {loadUsers();
+                        });
     }
 }
 
@@ -775,236 +822,442 @@ function unpostpage() {
 
 function savePages() {
     $.ajax({
-        type: 'POST',
-        url: 'page',
-        data: JSON.stringify({
-            pageTitle: $('#page-title').val(),
-            pageBody: (tinymce.activeEditor.getContent())
-        }),
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        'dataType': 'json'
-    }).success(function () {
-        $('#page-title').val('');
-        tinymce.init({selector: '#page-body'});
-        tinymce.activeEditor.setContent('');
-    });
+                type: 'POST',
+                url: 'page',
+                data: JSON.stringify(
+                        {
+                            pageTitle: $('#page-title').val(),
+                            pageBody: (tinymce.activeEditor.getContent())
+                        }),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                'dataType': 'json'
+            }).success(function () {
+                        $('#page-title').
+                                val('');
+                        tinymce.init(
+                                {selector: '#page-body'});
+                        tinymce.activeEditor.setContent(
+                                '');
+                    });
 }
 
 function loadPostedPages() {
     $.ajax({
-        url: 'postedPages'
-    }).success(function (data, status) {
-        fillStaticPages(data, status);
-    });
+                url: 'postedPages'
+            }).
+            success(function (data,status) 
+    {fillStaticPages(data,status);
+                    });
 }
 
 function loadPages() {
-    $.ajax({
-        url: 'pages'
-    }).success(function (data, status) {
-        fillPageTable(data, status);
-    });
+    $.ajax(
+            {
+                url: 'pages'
+            }).
+            success(
+                    function (
+                            data,
+                            status) {
+                        fillPageTable(
+                                data,
+                                status);
+                    });
 }
 
 
-function fillPageTable(pageList, status) {
+function fillPageTable(
+        pageList,
+        status) {
     clearPages();
-    var pTable = $('#pageRows');
-    $.each(pageList, function (index, page) {
-        pTable.append($('<tr>')
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'onClick': "location.href='pagedetailpage?pageId=" + page.pageId + "'"})
-                                .text(page.pageTitle)
+    var pTable = $(
+            '#pageRows');
+    $.each(
+            pageList,
+            function (
+                    index,
+                    page) {
+                pTable.append(
+                        $(
+                                '<tr>')
+                        .
+                        append(
+                                $(
+                                        '<td>')
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {'onClick': "location.href='pagedetailpage?pageId=" + page.pageId + "'"})
+                                        .
+                                        text(
+                                                page.pageTitle)
+                                        )
                                 )
-                        )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'data-page-id': page.pageId, 'data-toggle': 'modal', 'data-target': '#editPageModal'})
-                                .text('Edit')
+                        .
+                        append(
+                                $(
+                                        '<td>')
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {'data-page-id': page.pageId, 'data-toggle': 'modal', 'data-target': '#editPageModal'})
+                                        .
+                                        text(
+                                                'Edit')
+                                        )
                                 )
-                        )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({
-                                    'onClick': 'deletePage(' + page.pageId + ')'
-                                })
-                                .text('Delete')
+                        .
+                        append(
+                                $(
+                                        '<td>')
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {
+                                                    'onClick': 'deletePage(' + page.pageId + ')'
+                                                })
+                                        .
+                                        text(
+                                                'Delete')
+                                        )
                                 )
-                        )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'onClick': 'postPage(' + page.pageId + ',' + page.posted + ')'})
-                                .text(page.posted)
+                        .
+                        append(
+                                $(
+                                        '<td>')
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {'onClick': 'postPage(' + page.pageId + ',' + page.posted + ')'})
+                                        .
+                                        text(
+                                                page.posted)
+                                        )
                                 )
-                        )
-                );
-    });
+                        );
+            });
 }
 
-function postPage(pageId, posted) {
+function postPage(
+        pageId,
+        posted) {
 
     if (posted) {
-        $.ajax({
-            type: 'PUT',
-            url: 'unpostpage/' + pageId
-        }).success(function () {
-            loadPostedPages();
-            loadPages();
-        });
+        $.ajax(
+                {
+                    type: 'PUT',
+                    url: 'unpostpage/' + pageId
+                }).
+                success(
+                        function () {
+                            loadPostedPages();
+                            loadPages();
+                        });
     } else {
-        $.ajax({
-            type: 'PUT',
-            url: 'postpage/' + pageId
-        }).success(function () {
-            loadPostedPages();
-            loadPages();
-        });
+        $.ajax(
+                {
+                    type: 'PUT',
+                    url: 'postpage/' + pageId
+                }).
+                success(
+                        function () {
+                            loadPostedPages();
+                            loadPages();
+                        });
     }
 }
 
-function fillStaticPages(pageList, status) {
+function fillStaticPages(
+        pageList,
+        status) {
     clearStaticPages();
-    var pTable = $('#static-pages');
-    $.each(pageList, function (index, page) {
-        pTable.append($('<li>')
-                .append($('<a>')
-                        .attr({'onClick': "location.href='pagedetailpage?pageId=" + page.pageId + "'"})
-                        .text(page.pageTitle)
-                        )
-                );
-    });
+    var pTable = $(
+            '#static-pages');
+    $.each(
+            pageList,
+            function (
+                    index,
+                    page) {
+                pTable.append(
+                        $(
+                                '<li>')
+                        .
+                        append(
+                                $(
+                                        '<a>')
+                                .
+                                attr(
+                                        {'onClick': "location.href='pagedetailpage?pageId=" + page.pageId + "'"})
+                                .
+                                text(
+                                        page.pageTitle)
+                                )
+                        );
+            });
 }
 
-function fillSideBar(blogList, status) {
+function fillSideBar(
+        blogList,
+        status) {
     clearSideBar();
-    var bTable = $('#blogtable');
-    $.each(blogList, function (index, blog) {
-        bTable.append($('<li>')
-                .append($('<a>')
-                        .attr({'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
-                        .text(blog.blogTitle)
-                        )
-                );
-    });
+    var bTable = $(
+            '#blogtable');
+    $.each(
+            blogList,
+            function (
+                    index,
+                    blog) {
+                bTable.append(
+                        $(
+                                '<li>')
+                        .
+                        append(
+                                $(
+                                        '<a>')
+                                .
+                                attr(
+                                        {'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
+                                .
+                                text(
+                                        blog.blogTitle)
+                                )
+                        );
+            });
 }
 
-function fillUnpostedSideBar(blogList, status) {
+function fillUnpostedSideBar(
+        blogList,
+        status) {
     clearUnpostedSideBar();
-    var bTable = $('#unpostedblogtable');
-    $.each(blogList, function (index, blog) {
-        bTable.append($('<li>')
-                .append($('<a>')
-                        .attr({'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
-                        .text(blog.blogTitle)
-                        )
-                );
-    });
+    var bTable = $(
+            '#unpostedblogtable');
+    $.each(
+            blogList,
+            function (
+                    index,
+                    blog) {
+                bTable.append(
+                        $(
+                                '<li>')
+                        .
+                        append(
+                                $(
+                                        '<a>')
+                                .
+                                attr(
+                                        {'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
+                                .
+                                text(
+                                        blog.blogTitle)
+                                )
+                        );
+            });
 }
 
 function clearPages() {
-    $('#pageRows').empty();
+    $(
+            '#pageRows').
+            empty();
 }
 function clearStaticPages() {
-    $('#static-pages').empty();
+    $(
+            '#static-pages').
+            empty();
 }
 function clearSideBar() {
-    $('#blogtable').empty();
+    $(
+            '#blogtable').
+            empty();
 //    $('#unpostedblogtable').empty();
 }
 
 function clearUnpostedSideBar() {
 //    $('#blogtable').empty();
-    $('#unpostedblogtable').empty();
+    $(
+            '#unpostedblogtable').
+            empty();
 }
 
-$('#pageLoader').click(function () {
-    var element = $(event.relatedTarget);
-    var pageId = element.data('page-id');
-    var page = $(this);
-    $.ajax({
-        type: 'GET',
-        url: 'page/' + pageId
-    }).success(function (page) {
-        page.find('#page-id').text(page.pageId);
-        page.find('#page-title').text(page.pageTitle);
-        page.find('#page-page-body').text(page.pageBody);
-    });
-});
+$(
+        '#pageLoader').
+        click(
+                function () {
+                    var element = $(
+                            event.relatedTarget);
+                    var pageId = element.data(
+                            'page-id');
+                    var page = $(
+                            this);
+                    $.ajax(
+                            {
+                                type: 'GET',
+                                url: 'page/' + pageId
+                            }).
+                            success(
+                                    function (
+                                            page) {
+                                        page.find(
+                                                '#page-id').
+                                                text(
+                                                        page.pageId);
+                                        page.find(
+                                                '#page-title').
+                                                text(
+                                                        page.pageTitle);
+                                        page.find(
+                                                '#page-page-body').
+                                                text(
+                                                        page.pageBody);
+                                    });
+                });
 
-$('#editPageModal').on('show.bs.modal', function (event) {
-    var element = $(event.relatedTarget);
-    var pageId = element.data('page-id');
-    var modal = $(this);
-    $.ajax({
-        type: 'GET',
-        url: 'page/' + pageId
-    }).success(function (page) {
-        modal.find('#page-id').text(page.pageId);
-        modal.find('#edit-page-id').val(page.pageId);
-        modal.find('#edit-title').val(page.pageTitle);
-        modal.find('#edit-posted').val(page.posted);
-        tinymce.activeEditor.setContent(page.pageBody);
-    });
-});
+$(
+        '#editPageModal').
+        on(
+                'show.bs.modal',
+                function (
+                        event) {
+                    var element = $(
+                            event.relatedTarget);
+                    var pageId = element.data(
+                            'page-id');
+                    var modal = $(
+                            this);
+                    $.ajax(
+                            {
+                                type: 'GET',
+                                url: 'page/' + pageId
+                            }).
+                            success(
+                                    function (
+                                            page) {
+                                        modal.find(
+                                                '#page-id').
+                                                text(
+                                                        page.pageId);
+                                        modal.find(
+                                                '#edit-page-id').
+                                                val(
+                                                        page.pageId);
+                                        modal.find(
+                                                '#edit-title').
+                                                val(
+                                                        page.pageTitle);
+                                        modal.find(
+                                                '#edit-posted').
+                                                val(
+                                                        page.posted);
+                                        tinymce.activeEditor.setContent(
+                                                page.pageBody);
+                                    });
+                });
 
-function deletePage(pageId) {
-    var answer = confirm("Confirm?");
+function deletePage(
+        pageId) {
+    var answer = confirm(
+            "Confirm?");
     if (answer) {
-        $.ajax({
-            type: 'DELETE',
-            url: 'page/' + pageId
-        }).success(function () {
-            loadPages();
-        });
+        $.ajax(
+                {
+                    type: 'DELETE',
+                    url: 'page/' + pageId
+                }).
+                success(
+                        function () {
+                            loadPages();
+                        });
     }
 }
 
-function checkForm(form) {
-    var pwd1 = $('#add-password').val();
-    var pwd2 = $('#add-password2').val();
-    var first = $('#add-first-name').val();
-    var last = $('#add-last-name').val();
-    var email = $('#add-email').val();
-    var user = $('#add-user-name').val();
+function checkForm(
+        form) {
+    var pwd1 = $(
+            '#add-password').
+            val();
+    var pwd2 = $(
+            '#add-password2').
+            val();
+    var first = $(
+            '#add-first-name').
+            val();
+    var last = $(
+            '#add-last-name').
+            val();
+    var email = $(
+            '#add-email').
+            val();
+    var user = $(
+            '#add-user-name').
+            val();
 
     if (first.length > 0 && last.length > 0 && email.length > 0 && user.length > 0) {
         if (pwd1 === pwd2) {
             re = /[0-9]/;
-            if (!re.test(pwd1)) {
-                alert("Error: password must contain at least one number (0-9)!");
-                $('#add-password').focus();
+            if (!re.test(
+                    pwd1)) {
+                alert(
+                        "Error: password must contain at least one number (0-9)!");
+                $(
+                        '#add-password').
+                        focus();
                 return false;
             }
             re = /[a-z]/;
-            if (!re.test(pwd1)) {
-                alert("Error: password must contain at least one lowercase letter (a-z)!");
-                $('#add-password').focus();
+            if (!re.test(
+                    pwd1)) {
+                alert(
+                        "Error: password must contain at least one lowercase letter (a-z)!");
+                $(
+                        '#add-password').
+                        focus();
                 return false;
             }
             re = /[A-Z]/;
-            if (!re.test(pwd1)) {
-                alert("Error: password must contain at least one uppercase letter (A-Z)!");
-                $('#add-password').focus();
+            if (!re.test(
+                    pwd1)) {
+                alert(
+                        "Error: password must contain at least one uppercase letter (A-Z)!");
+                $(
+                        '#add-password').
+                        focus();
                 return false;
             }
             if (pwd1 === "") {
-                alert("Error: Please check that you've entered and confirmed your password!");
-                $('#add-password').focus();
+                alert(
+                        "Error: Please check that you've entered and confirmed your password!");
+                $(
+                        '#add-password').
+                        focus();
                 return false;
             }
             if (pwd1.length < 6) {
-                alert("Error: Password to short!");
-                $('#add-password').focus();
+                alert(
+                        "Error: Password to short!");
+                $(
+                        '#add-password').
+                        focus();
                 return false;
             }
 //        alert("You entered a valid password: " + $('#add-password').val());
             return true;
         } else {
-            alert("Your password and confirmation do not match!");
+            alert(
+                    "Your password and confirmation do not match!");
             return false;
         }
     } else {
@@ -1038,33 +1291,72 @@ function loadnavbar() {
 function search() {
 }
 
-function fillBlogTable(blogList, status) {
+function fillBlogTable(
+        blogList,
+        status) {
     clearblogs();
-    var bTable = $('#blogRows');
-    $.each(blogList, function (index, blog) {
-        bTable.append($('<tr>')
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
-                                .text(blog.blogTitle)
+    var bTable = $(
+            '#blogRows');
+    $.each(
+            blogList,
+            function (
+                    index,
+                    blog) {
+                bTable.append(
+                        $(
+                                '<tr>')
+                        .
+                        append(
+                                $(
+                                        '<td>')
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
+                                        .
+                                        text(
+                                                blog.blogTitle)
+                                        )
                                 )
-                        )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
-                                .text('Edit')
+                        .
+                        append(
+                                $(
+                                        '<td>')
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
+                                        .
+                                        text(
+                                                'Edit')
+                                        )
                                 )
-                        )
-                .append($('<td>')
-                        .append($('<a>')
-                                .attr({
-                                    'onClick': 'deleteBlog(' + blog.blogId + ')'
-                                })
-                                .text('Delete')
+                        .
+                        append(
+                                $(
+                                        '<td>')
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {
+                                                    'onClick': 'deleteBlog(' + blog.blogId + ')'
+                                                })
+                                        .
+                                        text(
+                                                'Delete')
+                                        )
                                 )
-                        )
-                );
-    });
+                        );
+            });
 }
 
 
@@ -1094,73 +1386,170 @@ function fillBlogTable(blogList, status) {
 //    var n = blogBody.indexOf("</p>");
 //    return blogBody.substr(0, n + 4);
 //}
-function fillblogbody(data, status) {
+function fillblogbody(
+        data,
+        status) {
     clearblogs();
-    var bbody = $('#blogbody');
-    $.each(data, function (index, blog) {
-        var blogPar = truncBlog(blog.blog, blog.blogId);
-        bbody.append($('<h2>').append($('<a>')
+    var bbody = $(
+            '#blogbody');
+    $.each(
+            data,
+            function (
+                    index,
+                    blog) {
+                var blogPar = truncBlog(
+                        blog.blog,
+                        blog.blogId);
+                bbody.append(
+                        $(
+                                '<h2>').
+                        append(
+                                $(
+                                        '<a>')
 //                .attr({'onClick': 'blogDetail(' + blog.blogId + ')'})
-                .attr({'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
-                .text(blog.blogTitle)))
-                .append($('<p>')
-                        .html(blogPar))
-                .append($('<div>')
-                        .attr({'align': 'right'})
-                        .append($('<a>')
-                                .attr({'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
-                                .text('Edit'))
-                        .append($('<a>')
-                                .attr({'onClick': 'deleteblog(' + blog.blogId + ')'})
-                                .text(' Delete'))
-                        )
-                .append($('<hr>'));
-    });
+                                .
+                                attr(
+                                        {'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
+                                .
+                                text(
+                                        blog.blogTitle)))
+                        .
+                        append(
+                                $(
+                                        '<p>')
+                                .
+                                html(
+                                        blogPar))
+                        .
+                        append(
+                                $(
+                                        '<div>')
+                                .
+                                attr(
+                                        {'align': 'right'})
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
+                                        .
+                                        text(
+                                                'Edit'))
+                                .
+                                append(
+                                        $(
+                                                '<a>')
+                                        .
+                                        attr(
+                                                {'onClick': 'deleteblog(' + blog.blogId + ')'})
+                                        .
+                                        text(
+                                                ' Delete'))
+                                )
+                        .
+                        append(
+                                $(
+                                        '<hr>'));
+            });
 }
 
-function blogDetail(blogId) {
-    var element = $(event.relatedTarget);
-    var blogId = element.data('blog-id');
-    var blog = $(this);
-    $.ajax({
-        type: 'GET',
-        url: 'blog/' + blogId
-    }).success(function (blog) {
-        blog.find('#blog-id').text(blog.blogId)
-        blog.find('#blog-title').text(blog.blogTitle);
-        blog.find('#blog-blog').text(blog.blog);
-    });
+function blogDetail(
+        blogId) {
+    var element = $(
+            event.relatedTarget);
+    var blogId = element.data(
+            'blog-id');
+    var blog = $(
+            this);
+    $.ajax(
+            {
+                type: 'GET',
+                url: 'blog/' + blogId
+            }).
+            success(
+                    function (
+                            blog) {
+                        blog.find(
+                                '#blog-id').
+                                text(
+                                        blog.blogId)
+                        blog.find(
+                                '#blog-title').
+                                text(
+                                        blog.blogTitle);
+                        blog.find(
+                                '#blog-blog').
+                                text(
+                                        blog.blog);
+                    });
 }
 
-function truncBlog(blogBody, blogId) {
-    var n = blogBody.indexOf("</p>");
+function truncBlog(
+        blogBody,
+        blogId) {
+    var n = blogBody.indexOf(
+            "</p>");
     var link = "<a onClick='" + 'location.href="blogdetailpage?blogId=' + blogId + '"' + "'>" + "... see more</a>";
-    var showBlog = blogBody.substr(0, n + 4) + link;
+    var showBlog = blogBody.substr(
+            0,
+            n + 4) + link;
     return showBlog;
 }
 
-$('#detailsModal').on('show.bs.modal', function (event) {
+$(
+        '#detailsModal').
+        on(
+                'show.bs.modal',
+                function (
+                        event) {
 //get the element that triggered the event
 //the anchor is the element/relatedTarget that is clicked on
 //UI is event driven programming, it sits there and waaits for something to happen
-    var element = $(event.relatedTarget);
-    var userId = element.data('user-id');
+                    var element = $(
+                            event.relatedTarget);
+                    var userId = element.data(
+                            'user-id');
 //    PLACEHOLDER - use dummy data for now
 //  Called detailsModal about, and now you're putting it into the variable
-    var modal = $(this);
+                    var modal = $(
+                            this);
 //      make an ajax call to get contact information for given contact
-    $.ajax({
-        type: 'GET',
-        url: 'user/' + userId
-    }).success(function (user) {
-        modal.find('#user-id').text(user.userId);
-        modal.find('#user-first-name').text(user.firstName);
-        modal.find('#user-last-name').text(user.lastName);
-        modal.find('#user-user-name').text(user.userName);
-        modal.find('#user-email').text(user.email);
-        modal.find('#user-enabled').text(user.enabled);
-    });
-});
+                    $.ajax(
+                            {
+                                type: 'GET',
+                                url: 'user/' + userId
+                            }).
+                            success(
+                                    function (
+                                            user) {
+                                        modal.find(
+                                                '#user-id').
+                                                text(
+                                                        user.userId);
+                                        modal.find(
+                                                '#user-first-name').
+                                                text(
+                                                        user.firstName);
+                                        modal.find(
+                                                '#user-last-name').
+                                                text(
+                                                        user.lastName);
+                                        modal.find(
+                                                '#user-user-name').
+                                                text(
+                                                        user.userName);
+                                        modal.find(
+                                                '#user-email').
+                                                text(
+                                                        user.email);
+                                        modal.find(
+                                                '#user-enabled').
+                                                text(
+                                                        user.enabled);
+                                    });
+                });
 
 //PAGE ITEM FUNCTIONS!!!
 //load page
@@ -1192,26 +1581,6 @@ function unpostpage() {
 
 }
 
-
-//BLOG ITEM FUNCTIONS!!!!
-function nextblog() {
-}
-
-function previousblog() {
-}
-
-
-//post blog function
-function postblog() {
-}
-
-
-//unpost blog function
-function unpostblog() {
-
-}
-
-
 //var sort_by = function(field, reverse, primer){
 //
 //   var key = primer ? 
@@ -1224,62 +1593,95 @@ function unpostblog() {
 //       return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
 //     } 
 //}
-function sortblogbydate(a, b) {
-    return parseLocalDate(a["blogDate"]) - parseLocalDate(b["blogDate"]);
+function sortblogbydate(
+        a,
+        b) {
+    return parseLocalDate(
+            a["blogDate"]) - parseLocalDate(
+            b["blogDate"]);
 }
-function getlastfiveblogs(){
- var blogdatelist = {"blogs": [Blog]};
-    blogdatelist["blogs"].sort(sortblogbydate);
-    var blogdatearray=[];
-    var blogdatearraylength=5;
-    
-    var recent1=blogdatearray[0];
-    var recent2=blogdatearray[1];
-    var recent3=blogdatearray[2];
-    var recent4=blogdatearray[3];
-    var recent5=blogdatearray[4];
-    
-    for(var i=0;i<blogdatearraylength;i++){
-        
+function getlastfiveblogs() {
+    var blogdatelist = {"blogs": [Blog]};
+    blogdatelist["blogs"].sort(
+            sortblogbydate);
+    var blogdatearray = [];
+    var blogdatearraylength = 5;
+
+    var recent1 = blogdatearray[0];
+    var recent2 = blogdatearray[1];
+    var recent3 = blogdatearray[2];
+    var recent4 = blogdatearray[3];
+    var recent5 = blogdatearray[4];
+
+    for (var i = 0; i < blogdatearraylength; i++) {
+
     }
-    
-    
-    }
+
+
+}
 
 //load recent blog table
 function fillblogtable() {
-   
+
     // clear the table so we don't repeat information
     clearBlogTable();
-    var blogtable = $('#blogtable');
+    var blogtable = $(
+            '#blogtable');
     // grab HTML element into which we're going to load the data
     var recentnumber = 0;
-    var bList = $('#recent' + recentnumber++);
+    var bList = $(
+            '#recent' + recentnumber++);
 
     // iterate through each of the JSON objects in the test data and render
     // them into the list
-    $.ajax({
-        url: 'blogs'
-    }).success(function (data, status) {
-        do {
-            $.ajax({
-                url: '/sidebarfragment'
-            }).success(function (data, status) {
-                $.each(data, function (index, blog) {
-                    bList.append($('ol')
-                            .append($('li')
-                                    .append($('<a>')
-                                            .attr({'data-blog-id': blog.blogId,'data-target': '#blogtable'})
-                                            .text(blog.blogTitle)
-                                            )
-                                    )
-                            );
-                });
+    $.ajax(
+            {
+                url: 'blogs'
+            }).
+            success(
+                    function (
+                            data,
+                            status) {
+                        do {
+                            $.ajax(
+                                    {
+                                        url: '/sidebarfragment'
+                                    }).
+                                    success(
+                                            function (
+                                                    data,
+                                                    status) {
+                                                $.each(
+                                                        data,
+                                                        function (
+                                                                index,
+                                                                blog) {
+                                                            bList.append(
+                                                                    $(
+                                                                            'ol')
+                                                                    .
+                                                                    append(
+                                                                            $(
+                                                                                    'li')
+                                                                            .
+                                                                            append(
+                                                                                    $(
+                                                                                            '<a>')
+                                                                                    .
+                                                                                    attr(
+                                                                                            {'data-blog-id': blog.blogId, 'data-target': '#blogtable'})
+                                                                                    .
+                                                                                    text(
+                                                                                            blog.blogTitle)
+                                                                                    )
+                                                                            )
+                                                                    );
+                                                        });
 
-            });
-            recentnumber++;
-        } while (recentnumber < 5 + 1);
-    });
+                                            });
+                            recentnumber++;
+                        } while (recentnumber < 5 + 1);
+                    });
 }
 //get blog date range function
 
@@ -1287,7 +1689,9 @@ function fillblogtable() {
 
 //clear recent blog table
 function clearblogtable() {
-    $('#blogtable').empty();
+    $(
+            '#blogtable').
+            empty();
 }
 
 //COMMENT FUNCTIONS GO HERE!!!
