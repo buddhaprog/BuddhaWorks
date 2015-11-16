@@ -322,21 +322,21 @@ function fillblogbody(data, status) {
     $.each(data, function (index, blog) {
         var blogPar = truncBlog(blog.blog, blog.blogId);
         bbody.append($('<h2>').append($('<a>')
-//                .attr({'onClick': 'blogDetail(' + blog.blogId + ')'})
+                .attr({'onClick': 'blogDetail(' + blog.blogId + ')'})
                 .attr(
                         {'onClick': "location.href='blogdetailpage?blogId=" + blog.blogId + "'"})
                 .text(blog.blogTitle)))
                 .append($('<p>')
                         .html(blogPar))
-//                .append($('<div>')
-//                        .attr({'align': 'right'})
-//                        .append($('<a>')
-//                                .attr({'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
-//                                .text('Edit'))
-//                        .append($('<a>')
-//                                .attr({'onClick': 'deleteblog(' + blog.blogId + ')'})
-//                                .text(' Delete'))
-//                        )
+                .append($('<div>')
+                        .attr({'align': 'right'})
+                        .append($('<a>')
+                                .attr({'data-blog-id': blog.blogId, 'data-toggle': 'modal', 'data-target': '#editModal'})
+                                .text('Edit'))
+                        .append($('<a>')
+                                .attr({'onClick': 'deleteblog(' + blog.blogId + ')'})
+                                .text(' Delete'))
+                        )
                 .append($('<hr>'));
     });
 }

@@ -30,6 +30,7 @@
                     <ul class="dropdown-menu" id="static-pages" role="menu">
                         <li><a href="${pageContext.request.contextPath}/bbcDupe">CSS bbcDupe</a></li>
                         <li><a href="${pageContext.request.contextPath}/jsreactiontester">JS reactionTester</a></li>
+                        <li><a href="${pageContext.request.contextPath}/jquery">jquery</a></li>
                     </ul>
                 </li>
                 <li class="admin dropdown">

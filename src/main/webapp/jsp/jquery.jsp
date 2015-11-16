@@ -12,15 +12,21 @@
         <!-- BuddhaWorks Icon -->
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/whitetest.jpg">
         <!--BuddhaWorks CSS-->
+        <link href="${pageContext.request.contextPath}/css/jquery-ui.theme.min.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/css/jquery-ui.structure.min.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/css/jQueryTheme.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/css/buddhaworkstheme.css" rel="stylesheet">
+        
     </head>
     <body style="background-image: none">
         <%@include file="../WEB-INF/jspf/navbarfragment.jspf"%>
         <%@include file="../WEB-INF/jspf/jquerybodyfragment.jspf"%>
         <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="${pageContext.request.contextPath}/js/jqueryUdemy.js"></script>  
+        
         <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>
+        <script src="${pageContext.request.contextPath}/js/jquery-ui.min.js"></script>  
+        <script src="${pageContext.request.contextPath}/js/jqueryUdemy.js"></script>  
     </body>
 </html>
 

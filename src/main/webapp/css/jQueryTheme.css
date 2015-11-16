@@ -1,0 +1,149 @@
+
+
+#greenCircle{
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    background-color:green;
+
+}
+#greenCircle2{
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    background-color:lightgreen;
+
+}
+#greenCircle3{
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    background-color:darkgreen;
+
+}
+.redBox1{
+    width:200px;
+    height:200px;
+    background-color:red;
+    position:relative; 
+    margin:10px;
+}
+#blueCircle1{
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    background-color:blue;
+    margin:10px;
+}
+.redBox2{
+    width:100px;
+    height:100px;
+    background-color:red;
+    position:relative; 
+    margin:10px;
+}
+#greenCircle4{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    background-color:forestgreen;
+
+}
+#greenCircle5{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    background-color:limegreen;
+
+}
+#greenCircle6{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    background-color:teal;
+
+}
+#wrapper{
+    width: 500px;
+   margin:0 auto; 
+    
+}
+.jqueryInput{
+    width:300px;
+    height:40px;
+    padding:5px;
+    border-radius: 5px;
+    border:1px solid grey;
+}
+#jqueryPWInput{
+    width:300px;
+    height:40px;
+    padding:5px;
+    border-radius: 5px;
+    border:1px solid grey;
+    
+}
+#jqueryPWInputConfirm{
+    width:300px;
+    height:40px;
+    padding:5px;
+    border-radius: 5px;
+    border:1px solid grey;
+}
+label {
+   float:left;
+   width:200px;
+   padding-top:7px;
+}
+#jquerySubmitButton{
+    height:40px;
+    width:100px;
+    margin-left:200px;
+}
+#jQueryError{
+    color:red;
+    margin:10px;
+}
+#BlackBox1{
+    width:200px;
+    height:200px;
+    background-color:Black;
+    position:relative; 
+    margin:10px;
+}
+ li {
+    float:left !important;
+  
+    list-style: none;
+}
+#BlackBox2{
+    width:200px;
+    height:200px;
+    background-color:Black;
+    position:relative; 
+    margin:10px;
+}
+#BlackBox3{
+    width:200px;
+    height:200px;
+    background-color:Black;
+    position:relative; 
+    margin:10px;
+}
+#BlackBox4{
+    float:left;
+    width:200px;
+    height:200px;
+    background-color:Black;
+    position:relative; 
+    margin:10px;
+}
+#BlackBox4target{
+    float:left;
+    width:250px;
+    height:250px;
+    border:solid black;
+    position:relative; 
+    margin:10px;
+}
+

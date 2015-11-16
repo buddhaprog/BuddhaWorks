@@ -60,6 +60,7 @@ public class BlogController {
 
     @RequestMapping(value = {"/blogsummarypage"}, method = RequestMethod.GET)
     public String displayBlogSummaryPage() {
+//        List<Blog> blogSummaryList= blogDao.getAllPostedBlogs();
         return "blogsummarypage";
     }
 
