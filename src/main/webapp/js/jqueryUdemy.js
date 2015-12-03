@@ -213,4 +213,32 @@ $(function () {
        }
    }); 
    
+$("#accordionexample").accordion();
+
+$("#sortableExample").sortable();
+
+var windowHeight=$(window).height();
+var menuBarHeight=$("#codeplayermenubar").height();
+var codeContainerHeight= windowHeight-menuBarHeight;
+$(".codeContainter").height(codeContainerHeight+"px");
+
+$(".toggleLi").click(function(){
+    $(this).toggleClass("active");
+    var activeDiv=$(this).html();
+    $("#"+activeDiv+"Container").toggle();
+     var showingDivs=$(".codeContainter").filter(function(){
+        return($(this).css("display")!="none"); 
+     }).length;
+    var containerWidth=100/showingDivs;
+    $(".codeContainter").css("width", containerWidth+"%");
+});
+
+$("#runCodePlayerButton").click(function(){
+   $("#resultFrame").contents().find("html").html("<style>"+$("#cssCode").val()+"</style>" +$("#htmlCode").val());
    
+//   document.getElementById("resultFrame").contentWindow.eval($("#jsCode").val());
+   
+   
+   
+   
+});
