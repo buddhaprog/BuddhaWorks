@@ -1,0 +1,161 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="container-fluid wideMe" >
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="${pageContext.request.contextPath}/homepage" class="navbar-brand navbrand1">HomePage</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bootExampleNav">
+                <ul class="nav navbar-nav">
+                    <li><a href="${pageContext.request.contextPath}/resume">Resume</a></li>
+                    <li><a href="http://www.artofmanliness.com/trunk/1748/henry-rollins-iron-and-soul/">Link 1</a></li>
+                    <li><a href="http://www.theironandthesoul.net/2012/04/the-iron-and-the-soul/">Link 2</a></li>
+                    <li><a href="http://www.oldtimestrongman.com/strength-articles/iron-henry-rollins">Link 3</a></li>
+                    <li><a href="http://rosstraining.com/blog/2009/12/04/iron-and-the-soul-by-henry-rollins/">Link 4</a></li>
+                </ul>
+                <div class="collapse navbar-collapse pull-right">
+                    <form id="bootLog" class="form-inline">
+                        <div class="form-group">
+                            <label for="username">UserName</label>
+                            <input name="username" type="text" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">PassWord</label>
+                            <input name="password" type="text" class="form-control"/>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">keep me logged in
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button name="login" type="button" class="btn btn-success" data-toggle="modal" data-target="#modalExample3"/>login</button>
+                        </div>
+
+                    </form>  
+
+                </div>
+                <div class="collapse navbar-collapse pull-right scrollSpyNav">
+                    <ul class="nav navbar-nav">  
+
+                        <li><a href="#firstContentDiv">Top</a></li>
+                        <li><a href="#secondContentDiv">About</a></li>
+                        <li><a href="#thirdContentDiv">Download</a></li>
+                        <li><a href="${pageContext.request.contextPath}/bootStrapPageExample1">BootStrap Example 1</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <div class="container-fluid" id="contentContainer1">
+
+        <div class="contentDiv2 container-fluid" id="firstContentDiv">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" id="contentDiv2Row1">
+                    <h1 class="marginTop">BootStrap Page Example</h1>
+                    <p class="lead marginTop">This is just an Example of some basic BootStrap</p>
+                    <p class="overlayText marginTop">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p class="boldThis marginTop">Interested? Join Our Mailing List!</p>
+                    <form id="bootform1">
+                        <div class="input-group input-group-sm col-md-6 col-md-offset-3">
+                            <span class="input-group-addon">@</span>
+                            <input name="email" type="email" class="form-control"/>
+
+                        </div>
+                        <input type="submit" class="btn btn-success btn-lg marginTop">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contentDiv2" id="secondContentDiv">
+            <div class="row center">
+                <h1 class="title1">Lorem ipsum dolor sit amet......</h1>
+                <p class="lead center marginTop littlePad">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-4 marginTop">
+                    <h2><span class="glyphicon glyphicon-bishop"></span> Lorem ipsum </h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                    <button class="btn btn-success col-md-offset-2 ">Random</button>
+                </div>
+                <div class="col-md-4 marginTop">
+                    <h2><span class="glyphicon glyphicon-king"></span> Lorem ipsum </h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                    <button class="btn btn-success col-md-offset-2 ">Random</button>
+                </div>
+                <div class="col-md-4 marginTop">
+                    <h2><span class="glyphicon glyphicon-road"></span> Lorem ipsum </h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                    <button class="btn btn-success col-md-offset-2">Random</button>
+                </div>
+            </div>
+            <div class="row center">
+                <h1 class="title1">Lorem ipsum dolor sit amet......</h1>
+                <p class="lead center marginTop littlePad">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+
+        </div>
+
+        <div class="contentDiv2" id="thirdContentDiv">
+            <div class="row ">
+                <h1 class="center title2" style="padding-top:150px">Pretend to Download!</h1>
+                <p class="lead center marginTop">Some persuasive Text!</p>
+                <button id="googlePlayButton" class="btn btn-primary col-md-offset-5" data-toggle="modal" data-target="#modalExample2"><img src="${pageContext.request.contextPath}/img/google-play-icon.png" alt="googlePlayImage"></button>
+            </div>
+
+            <div id="modalExample2" class="modal fade">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Modal example</h4>
+                        </div>
+                        <div class="modal-body">
+                            Look it is a modal, wow!
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" data-dismiss="modal">close</button>
+                            <button class="btn btn-success">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalExample3" class="modal fade">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">x</button>
+                        <h4 class="modal-title">Modal example</h4>
+                    </div>
+                    <div class="modal-body">
+                        Look it is a modal, wow!
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">close</button>
+                        <button class="btn btn-success">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+</div>
+
+

@@ -1,0 +1,95 @@
+.large{
+    font-size:200%;
+    color:red;
+}
+.normalSize{
+    background-color: red;
+}
+#div1{
+    background-color:red;
+}
+#div2{
+    background-color:blue;
+}
+#div3{
+    background-color:grey;
+}
+.contentDiv{
+    height:900px;
+}
+
+.navbrand1{
+    font-size: large;
+    font-weight: bold;
+}
+#bootLog{
+    padding:8px 5px 5px 5px;
+}
+#bootExampleNav{
+    padding:1px 1px 1px 1px;
+}
+.wideMe{
+    padding-left:0px;
+    padding-right:0px;
+    width:100%;
+}
+#firstContentDiv{
+    
+    background-image: url("../img/12375492943_ec40c86191_k.jpg");
+    background-size: cover;
+}
+#contentContainer1{
+    padding-left:0px;
+    padding-right:0px;
+}
+#contentDiv2Row1{
+    margin-top: 100px;
+    text-align: center;
+
+}
+#contentDiv2Row1 h1{
+    font-size:350%;
+    font-weight: bold;
+} 
+.overlayText{
+    background:rgba(100,100,100, 0.75);
+    border-radius: 4px;
+    padding:5px;
+}
+.boldThis{
+    font-weight: bold;
+    font-size: 125%;
+}
+.marginTop{
+    margin-top:25px;
+}
+.center{
+    text-align: center;
+}
+.title1{
+    margin-top:100px;
+    font-size:300%;
+}
+.littlePad{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#thirdContentDiv{
+    background-image: url("../img/9713275255_908edb2e8f_k.jpg");
+    background-size: cover;
+}
+.marginTopMore{
+    margin-top: 75px;
+}
+.title2{
+    margin-top:100px;
+    font-size:400%;
+}
+#googlePlayButton{
+    border-radius: 10px;
+}
+#secondContentDiv{
+    background-color: #E7DBCF;
+    padding-left: 25px;
+    padding-right: 25px;
+}

@@ -1,0 +1,175 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="${pageContext.request.contextPath}/homepage" class="navbar-brand">HomePage</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="${pageContext.request.contextPath}/resume">Resume</a></li>
+                <li><a href="${pageContext.request.contextPath}/bootStrapPage">BootStrapBasics</a></li>
+                <li><a href="${pageContext.request.contextPath}/bootStrapPageExample1">BootStrapExample1</a></li>
+                <li><a href="http://www.artofmanliness.com/trunk/1748/henry-rollins-iron-and-soul/">Link 1</a></li>
+                <li><a href="http://www.theironandthesoul.net/2012/04/the-iron-and-the-soul/">Link 2</a></li>
+                <li><a href="http://www.oldtimestrongman.com/strength-articles/iron-henry-rollins">Link 3</a></li>
+                <li><a href="http://rosstraining.com/blog/2009/12/04/iron-and-the-soul-by-henry-rollins/">Link 4</a></li>
+            </ul>
+            <div class="collapse navbar-collapse pull-right scrollSpyNav">
+                <ul class="nav navbar-nav">  
+                    <li><a href="">Page Nav</a></li>
+                    <li><a href="#div1">Div 1</a></li>
+                    <li><a href="#div2">Div 2</a></li>
+                    <li><a href="#div3">Div 3</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>      
+</div>
+<div style="padding-bottom:50px"></div>
+<div class="container-fluid">
+    <h1>Basic Bootstrap Pieces </h1>
+    <h4>(click BootStrap Example in the nav bar to go to an example)</h4>
+    <hr/>
+    <div class="row">
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-6">.col-md-6</div>
+    </div>
+</div>
+<hr/>
+<div class="container">
+
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="username">UserName</label>
+            <input name="username" type="text" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="password">PassWord</label>
+            <input name="password" type="text" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="date">date</label>
+            <input name="date" type="date" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="email">email</label>
+            <input name="email" type="email" class="form-control"/>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">keep me logged in
+            </label>
+        </div>
+
+        <div class="form-group">
+            <input name="login" value="login" type="submit" class="btn btn-default"/>
+        </div>
+    </form>
+</div>
+<hr/>
+<div class="container">
+    <table class="table table-striped table-bordered">
+        <tr><th>Name</th><th>Age</th></tr>
+        <tr class="success"><td>Rob</td><td>36</td></tr>
+        <tr><td>Tom</td><td>38</td></tr>
+        <tr><td class="danger">Jon</td><td>40</td></tr>
+    </table>
+</div>
+<hr/>
+<div class="container">
+    <span class="glyphicon glyphicon-baby-formula"></span>
+    <span class="glyphicon glyphicon-search large"></span>
+    <span class="glyphicon glyphicon-apple normalSize"></span>
+
+    <div class="input-group">
+        <span class="glyphicon glyphicon-comment input-group-addon">Comment</span>
+        <input name="comment" type="text" class="form-control"/>
+        <span class="glyphicon glyphicon-comment input-group-addon">Comment</span>
+    </div>
+    <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-exclamation-sign"></span>Comment</button>
+
+    <div class="alert alert-success alert-dismissable">
+        <button type="button" data-dismiss="alert">x</button>
+        you've done it
+    </div>
+    <div class="alert alert-danger alert-dismissable">
+        <button type="button" data-dismiss="alert">x</button>
+        you've done it
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">inbox<span class="badge">12</span></li>
+
+        <li class="list-group-item">sent<span class="badge">2</span></li>
+        <li class="list-group-item">item 3</li>
+        <li class="list-group-item">item 4</li>
+
+    </ul>
+
+</div>
+<hr/>
+
+<div class="container">
+    <div id="modalExample1" class="modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">x</button>
+                    <h4 class="modal-title">Modal example</h4>
+                </div>
+                <div class="modal-body">
+                    Look it is a modal, wow!
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">close</button>
+                    <button class="btn btn-success">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-success" data-toggle="modal" data-target="#modalExample1">Open Modal</button>
+
+</div>
+
+
+<div class="container">
+    <h3>Scroll Spy</h3>
+
+    <div id="div1" class="contentDiv">Content Example</div>
+    <div id="div2" class="contentDiv">Content Example</div>
+    <div id="div3" class="contentDiv">Content Example</div>
+
+</div>
+
+
+<div style="padding-bottom: 40px"></div>

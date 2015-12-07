@@ -39,4 +39,12 @@ public class HomeController {
     public String displayResume() {
         return "resume";
     }
+    @RequestMapping(value={"/bootStrapPage"}, method=RequestMethod.GET)
+    public String displayBootStrapPage() {
+        return "bootStrapPage";
+    }
+    @RequestMapping(value={"/bootStrapPageExample1"}, method=RequestMethod.GET)
+    public String displayBootStrapPageExample1() {
+        return "bootStrapPageExample1";
+    }
 }
