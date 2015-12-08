@@ -111,7 +111,7 @@
         </dependencies>
 
         <build>
-                <finalName>spring-mvc-webapp</finalName>
+                <finalName>buddhaworks</finalName>
                 <resources>
                         <resource>
                                 <directory>src/main/resources</directory>
