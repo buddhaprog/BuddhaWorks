@@ -145,6 +145,9 @@
 #bbc-news-menu a {
     color:white;
 }
+#bbc-news-menu {
+    padding-top: 30px;
+}
 #bbcbody h1 a {
     color:#1F4F82;
     font-weight:bold;
