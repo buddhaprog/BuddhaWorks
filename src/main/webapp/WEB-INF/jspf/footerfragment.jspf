@@ -5,8 +5,8 @@
 <div id="footer">
     <div class="container">
         <p class="muted credit" style="text-align: right">
-            <a href="http://www.swcguild.com/" target="_blank">The Guild</a><br>
-            <a href="http://www.learningtree.com/" target="_blank">Learning Tree</a>
+            <a href="http://www.thesoftwareguild.com/" target="_blank">The Guild</a><br>
+           
             <a class="pull-left" href="${pageContext.request.contextPath}/homepage">&copy; 2015 Buddhaworks.org</a>
         </p> 
     </div>

@@ -8,7 +8,7 @@ $(document).ready(function () {
     loadUsers();
     loadPages();
     loadPostedPages();
-
+$(".contentDiv2").css("min-height", $(window).height());
     //active nav bar stuff
     var url = window.location;
     $('ul.nav a[href="' + url + '"]').parent().addClass('active');

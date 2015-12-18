@@ -1,16 +1,17 @@
 <%-- any content can be specified here e.g.: --%>
 
-<div class="container textback">
+<div class="container textback marginTop">
     <!--blog header does not show, work on this-->
     <div class="blog-header">
         <!--style="text-align: center"-->
-        <h1 class="blog-title">
+        <h2 class="blog-title">
             jQuery and Some jQueryUI
-        </h1>
+        </h2>
         <hr/>
     </div>
 </div>
-<div class="container textback" style="margin-top: 20px">
+<div class="twoCol">
+<div class="container textback col-md-6">
     <!--blog header does not show, work on this-->
     <div class="blog-header">
         <!--style="text-align: center"-->
@@ -20,7 +21,7 @@
         <hr/>
     </div>
 
-    <div class="col-sm-12 blog-main" style="">
+    <div class="col-sm-8 blog-main" style="">
         <div id="wrapper2">
             <div id="codeplayermenubar">
                 <div id="codeplayerlogo">CodePlayer</div>
@@ -428,6 +429,6 @@
     </div>
 </div><!-- /.container -->
 
-
+</div>
 
 <div style="padding-bottom: 40px"></div>

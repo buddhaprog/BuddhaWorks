@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -31,6 +31,7 @@
                         <li><a href="${pageContext.request.contextPath}/bbcDupe">CSS bbcDupe</a></li>
                         <li><a href="${pageContext.request.contextPath}/jsreactiontester">JS reactionTester</a></li>
                         <li><a href="${pageContext.request.contextPath}/jquery">jquery</a></li>
+                        <li><a href="http://buddhaworks.org/examplephp.php">Php</a></li>
                         <li><a href="${pageContext.request.contextPath}/bootStrapPage">BootStrap</a></li>
                         <li><a href="${pageContext.request.contextPath}/bootStrapPageExample1">BootStrap Example 1</a></li>
                     </ul>

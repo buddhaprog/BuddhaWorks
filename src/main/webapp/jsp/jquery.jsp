@@ -18,7 +18,7 @@
         <link href="${pageContext.request.contextPath}/css/buddhaworkstheme.css" rel="stylesheet">
         
     </head>
-    <body style="background-image: none">
+    <body class="blackBack">
         <%@include file="../WEB-INF/jspf/navbarfragment.jspf"%>
         <%@include file="../WEB-INF/jspf/jquerybodyfragment.jspf"%>
         <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>

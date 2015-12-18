@@ -1,9 +1,8 @@
 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
     <div class="sidebar-module sidebar-module-inset">
         <h4>About</h4>
-        <p>This project demonstrates the efforts of <em>Rob Helvey and is currently in progress</em>. 
-            All credit to getting me here should be given to my Benevolent and Patient instructors, from the SWCG, 
-            <em> Sadukie and Eric Ward</em> as well as my Brother Eric.</p>
+        <p>This project demonstrates my <em>(Rob Helvey)</em> gradual steps forward in learning how to code. 
+            I give my continued thanks to my Brother Eric Helvey, Sadukie, and Eric Ward in helping me on my journey</p>
     </div>
     <div class="sidebar-module">
         <h4>Recent Blog</h4>
@@ -11,12 +10,12 @@
         </ol>
     </div>
     <div class="sidebar-module">
-        <h4>find us on:</h4>
+        <h4>find me on:</h4>
         <ol class="list-unstyled">
-            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-            <li><a href="https://www.facebook.com/officialhenryrollins" target="_blank">Rollins Facebook</a></li>
-            <li><a href="https://www.linkedin.com/profile/view?id=6465215&trk=hp-identity-name" target="_blank">linkedin</a></li>
+            <li><a href="https://github.com/" target="_blank">Add GitHub Later</a></li>
+            <li><a href="https://twitter.com/" target="_blank">Add Twitter Later</a></li>
+            <li><a href="https://www.facebook.com/officialhenryrollins" target="_blank">Add Facebook later</a></li>
+            <li><a href="https://www.linkedin.com/in/rob-helvey-53b1b92" target="_blank">linkedin</a></li>
         </ol>
     </div>
     <div class="sidebar-module">

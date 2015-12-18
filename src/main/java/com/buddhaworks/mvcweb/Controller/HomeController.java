@@ -18,7 +18,7 @@ public class HomeController {
        this.dao = dao;
     }
     
-    @RequestMapping(value={"/", "/home", "/homepage", "index", "/index"}, method=RequestMethod.GET)
+    @RequestMapping(value={"/index.jsp", "/", "/home", "/homepage", "index", "/index"}, method=RequestMethod.GET)
     public String displayHomePage() {
         return "homepage";
     }

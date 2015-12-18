@@ -39,16 +39,11 @@ a:active {
     color: #0000FF;
 }
 .textback{
-
+border-radius: 5px;
     color:black;
     padding:20px;
     border:2px solid black;
     background:rgba(100,100,100, 0.90);
-    /*    background-color: black;
-            z-index: 0;
-            opacity: 0.75;
-            border-radius: 20px;*/
-
 }
 
 
@@ -57,7 +52,7 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #000;
     font-weight: 700;
-        background-image: url("../img/metal-scratched.jpg");
+    
 }
 
 h1, .h1,
@@ -107,6 +102,7 @@ h6, .h6 {
  */
 
 .blog-main {
+    margin-top:125px;
     position: relative;
     font-size: 18px;
     line-height: 1.5;
@@ -114,21 +110,22 @@ h6, .h6 {
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
+    
     border: #000 2px solid;
     background:rgba(100,100,100, 0.90);
     padding: 10px;
     margin: 0 -15px 15px;
+    border-radius: 5px;
 }
 .sidebar-module-inset {
     padding: 10px;
-    border-radius: 4px;
+    
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
     margin-bottom: 10;
 }
-
 
 /* Pagination */
 .pager {
@@ -146,7 +143,9 @@ h6, .h6 {
 /*
  * Blog posts
  */
-
+.blog-sidebar{
+    margin-top:125px;
+}
 .blog-post {
     margin-bottom: 60px;
 }
@@ -176,7 +175,7 @@ html, body {
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-    
+
     font-family: Impact, Charcoal, sans-serif;
     font-weight:400;
     height: 50px;
@@ -276,6 +275,7 @@ html, body {
     border: #000 1px solid;
     font-family: Impact, Charcoal, sans-serif;
     font-weight: 400;
+    
 
 }
 .brand{
@@ -421,9 +421,43 @@ user-select: none; */
 }
 
 #switchImage{
-        margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .container {
     padding-bottom: 20px;
-    
+
+}
+.threeCol {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+.twoCol {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+.threeCol li{
+    list-style-type:none;
+}
+.twoCol li{
+    list-style-type:none;
+}
+
+.center{
+    text-align: center;
+}
+
+#zeroContentDiv{
+    background-image: url("../img/metal-scratched.jpg");
+    background-size: cover;
+}
+.bottomPadding{
+    padding-bottom: 30px;
+}
+.topMargin{
+    margin-top:75px;
+}
+.blackBack{
+   background-color: black;
 }

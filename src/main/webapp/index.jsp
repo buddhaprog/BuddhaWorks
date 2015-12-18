@@ -14,6 +14,7 @@
 
     </head>
     <body>
+        
         <div class="container">
             <h1>Spring MVC Application from Archetype</h1>
             <hr/>
