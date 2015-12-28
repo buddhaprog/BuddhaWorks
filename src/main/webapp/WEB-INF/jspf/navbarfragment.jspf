@@ -32,6 +32,7 @@
                         <li><a href="${pageContext.request.contextPath}/jsreactiontester">JS reactionTester</a></li>
                         <li><a href="${pageContext.request.contextPath}/jquery">jquery</a></li>
                         <li><a href="http://buddhaworks.org/examplephp.php">Php</a></li>
+                        <li><a href="http://buddhaworks.org/weatherphp.php">Php Weather Scraper</a></li>
                         <li><a href="${pageContext.request.contextPath}/bootStrapPage">BootStrap</a></li>
                         <li><a href="${pageContext.request.contextPath}/bootStrapPageExample1">BootStrap Example 1</a></li>
                     </ul>
