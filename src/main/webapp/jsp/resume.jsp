@@ -12,15 +12,17 @@
         <!-- BuddhaWorks Icon -->
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/whitetest.jpg">
         <!--BuddhaWorks CSS-->
-        <link href="${pageContext.request.contextPath}/css/buddhaworkstheme.css" rel="stylesheet">
+     
+        <link href="${pageContext.request.contextPath}/css/buddhaworksResumetheme.css" rel="stylesheet">
     </head>
-    <body style="background-image: none">
-        <%@include file="../WEB-INF/jspf/navbarfragment.jspf"%>
-        <%@include file="../WEB-INF/jspf/resumeBodyFragment.jspf"%>
-        <%@include file="../WEB-INF/jspf/footerfragment.jspf"%>
-        <!-- Placed at the end of the document so the pages load faster -->
+    <body data-spy="scroll" data-target=".scrollSpyNav">
         
+        <%@include file="../WEB-INF/jspf/resumeBodyFragment.jspf"%>
+        <!-- Placed at the end of the document so the pages load faster -->
         <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>
+        <script type="text/javascript">
+            $(".contentDiv2").css("min-height", $(window).height());
+        </script>  
     </body>
 </html>
 
