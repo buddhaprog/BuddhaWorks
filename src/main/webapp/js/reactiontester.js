@@ -1,7 +1,6 @@
 //reaction tester stuff
 document.getElementById('clearReactionShape').onclick = function () {
-    document.getElementById(
-            "redBox").style.display = "none";
+    document.getElementById("redBox").style.display = "none";
 };
 document.getElementById('reactionButton').onclick = function () {
     reactionGame();

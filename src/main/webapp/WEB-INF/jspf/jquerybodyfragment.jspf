@@ -10,54 +10,57 @@
         <hr/>
     </div>
 </div>
-<div class="twoCol">
-<div class="container textback col-md-6">
-    <!--blog header does not show, work on this-->
-    <div class="blog-header">
-        <!--style="text-align: center"-->
-        <h1 class="blog-title">
-            Code Player
-        </h1>
-        <hr/>
-    </div>
 
-    <div class="col-sm-8 blog-main" style="">
-        <div id="wrapper2">
-            <div id="codeplayermenubar">
-                <div id="codeplayerlogo">CodePlayer</div>
-                <div id="buttonDiv">
-                    <button id="runCodePlayerButton">Run</button>
+<div class="row">
+<div class="textback col-md-6 col-md-offset-3">
+    
+        <!--blog header does not show, work on this-->
+        <div class="blog-header">
+            <!--style="text-align: center"-->
+            <h1 class="blog-title">
+                Code Player
+            </h1>
+            <hr/>
+        </div>
+
+        <div class="col-sm-8" style="">
+            <div id="wrapper2">
+                <div id="codeplayermenubar">
+                    <div id="codeplayerlogo">CodePlayer</div>
+                    <div id="buttonDiv">
+                        <button id="runCodePlayerButton">Run</button>
+                    </div>
+
+                    <ul id="playerToggles">
+                        <li class="toggleLi btn-primary active">HTML</li>
+                        <li class="toggleLi btn-primary">CSS</li>
+                        <li class="toggleLi btn-primary">JS</li>
+                        <li class="toggleLi btn-primary active">RESULT</li>
+                    </ul>
                 </div>
-
-                <ul id="playerToggles">
-                    <li class="toggleLi btn-primary active">HTML</li>
-                    <li class="toggleLi btn-primary">CSS</li>
-                    <li class="toggleLi btn-primary">JS</li>
-                    <li class="toggleLi btn-primary active">RESULT</li>
-                </ul>
-            </div>
-            <div class="clearMe"></div>
-            <div class="codeContainter" id="HTMLContainer">
-                <div class="codeLabel">HTML</div>
-                <textarea id="htmlCode"><div id="codePlayerTestDiv">test</div> </textarea>
-            </div>
-            <div class="codeContainter" id="CSSContainer">
-                <div class="codeLabel">CSS</div>
-                <textarea id="cssCode">#codePlayerTestDiv{color:red;}</textarea>
-            </div>
-            <div class="codeContainter" id="JSContainer">
-                <div class="codeLabel">JS (turned off)</div>
-                <textarea id="jsCode">
+                <div class="clearMe"></div>
+                <div class="codeContainter" id="HTMLContainer">
+                    <div class="codeLabel">HTML</div>
+                    <textarea id="htmlCode"><div id="codePlayerTestDiv">test</div> </textarea>
+                </div>
+                <div class="codeContainter" id="CSSContainer">
+                    <div class="codeLabel">CSS</div>
+                    <textarea id="cssCode">#codePlayerTestDiv{color:red;}</textarea>
+                </div>
+                <div class="codeContainter" id="JSContainer">
+                    <div class="codeLabel">JS (turned off)</div>
+                    <textarea id="jsCode">
                     var x= document.getElementById("codePlayerTestDiv").innerHTML;
                     alert(x);
-                </textarea>
-            </div>
-            <div class="codeContainter" id="RESULTContainer">
-                <div class="codeLabel">RESULT</div>
-                <iframe id="resultFrame"></iframe>
-            </div>
+                    </textarea>
+                </div>
+                <div class="codeContainter" id="RESULTContainer">
+                    <div class="codeLabel">RESULT</div>
+                    <iframe id="resultFrame"></iframe>
+                </div>
 
 
+            </div>
         </div>
     </div>
 </div>
@@ -429,6 +432,6 @@
     </div>
 </div><!-- /.container -->
 
-</div>
+
 
 <div style="padding-bottom: 40px"></div>

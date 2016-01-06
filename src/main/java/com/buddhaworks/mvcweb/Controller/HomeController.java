@@ -47,8 +47,8 @@ public class HomeController {
     public String displayBootStrapPageExample1() {
         return "bootStrapPageExample1";
     }
-    @RequestMapping(value={"/testphp.php"}, method=RequestMethod.GET)
-    public String displaytestphp() {
-        return "testphp.php";
+    @RequestMapping(value={"/babySitterKata"}, method=RequestMethod.GET)
+    public String displaybabySitterKata() {
+        return "babySitterKata";
     }
 }

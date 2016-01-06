@@ -32,26 +32,28 @@
 
                                 <p>This shows examples of a basic site/site using the following technologies:</p>
                                 <ul class="threeCol"> 
-                                    <li> HTML</li>
-                                    <li>  CSS</li>
-                                    <li>  Java</li>
-                                    <li>  ajax</li>
-                                    <li>  jQuery</li>
-                                    <li>  php</li>
-                                    <li>  SQL</li>
-                                    <li>  MySql</li>
-                                    <li>  phpadmin</li>
-                                    <li>  Spring MVC</li>
-                                    <li>  JDBC templates</li>
-                                    <li>  Bootstrap</li>
-                                    <li>  Spring security</li>
-                                    <li>  netbeans</li>
-                                    <li> tinymce</li>
-                                    <li>  tomcat</li>
-                                    <li>  maven</li>
-                                    <li>  php</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Java</li>
+                                    <li>AJAX</li>
+                                    <li>jQuery</li>
+                                    <li>PHP</li>
+                                    <li>SQL</li>
+                                    <li>MySql</li>
+                                    <li>myPhpAdmin</li>
+                                    <li>Spring MVC</li>
+                                    <li>JDBC templates</li>
+                                    <li>Bootstrap</li>
+                                    <li>Spring security(Turned off ATM)</li>
+                                    <li>netbeans</li>
+                                    <li>tinymce</li>
+                                    <li>tomcat</li>
+                                    <li>maven</li>
+                                    <li>php</li>
+                                    <li>Jenkins</li>
+                                    <li>cPanel</li>
                                 </ul>
-                                <p>This site can:</p>
+                                <p>This site can:(turned off at the moment)</p>
                                 <ul class="twoCol">
                                     <li>Manage Users</li>
                                     <li>Create Blogs

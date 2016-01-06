@@ -1,7 +1,7 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 <!--tried modal content as well-->
-<!--<div style="text-align: center">
+<div style="text-align: center">
     <div>
         <h5>Please Enter Your Login Information:</h5>
     </div>
@@ -20,7 +20,7 @@
     </div>
     New To our company?<br>
     <br>
-    <p><button type="button"  class="btn btn-primary" id="newuser-button" data-toggle="modal" data-target=".newuserformmodal">Register</button></p>
+    <p><button type="button"  class="btn btn-primary" id="newuser-button" data-toggle="modal" data-target=".newuserformmodal">Register</button></p><!--
     <%@include file="newuserformmodalfragment.jspf"%>
 </div>-->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">

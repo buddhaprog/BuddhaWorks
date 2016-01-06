@@ -1,19 +1,4 @@
-.large{
-    font-size:200%;
-    color:red;
-}
-.normalSize{
-    background-color: red;
-}
-#div1{
-    background-color:red;
-}
-#div2{
-    background-color:blue;
-}
-#div3{
-    background-color:grey;
-}
+/*General CSS for Resume Page*/
 .contentDiv{
     height:900px;
 }
@@ -22,9 +7,7 @@
     font-size: large;
     font-weight: bold;
 }
-#bootLog{
-    padding:8px 5px 5px 5px;
-}
+
 #bootExampleNav{
     padding:1px 1px 1px 1px;
 }
@@ -33,21 +16,21 @@
     padding-right:0px;
     width:100%;
 }
-#firstContentDiv{
-    
-    background-image: url("../img/12375492943_ec40c86191_k.jpg");
-    background-size: cover;
-}
 #contentContainer1{
     padding-left:0px;
     padding-right:0px;
 }
-#contentDiv2Row1{
+
+#contentDiv2Row1 h1{
+    font-size:350%;
+    font-weight: bold;
+} 
+#contentDiv4Row1{
     margin-top: 100px;
     text-align: center;
 
 }
-#contentDiv2Row1 h1{
+#contentDiv4Row1 h1{
     font-size:350%;
     font-weight: bold;
 } 
@@ -66,42 +49,277 @@
 .center{
     text-align: center;
 }
-.title1{
-    margin-top:100px;
-    font-size:300%;
-}
+
 .littlePad{
     padding-left: 25px;
     padding-right: 25px;
 }
-#thirdContentDiv{
-    background-image: url("../img/9713275255_908edb2e8f_k.jpg");
-    background-size: cover;
-}
+
 .marginTopMore{
     margin-top: 75px;
 }
-.title2{
-    margin-top:100px;
-    font-size:400%;
-}
-#googlePlayButton{
-    border-radius: 10px;
-}
-#secondContentDiv{
-    background-color: #E7DBCF;
-    padding-left: 25px;
-    padding-right: 25px;
-}
+
 .footer{
     background-color: #1b1b1b;
-  background-image: -moz-linear-gradient(top, #222222, #111111);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
-  background-image: -webkit-linear-gradient(top, #222222, #111111);
-  background-image: -o-linear-gradient(top, #222222, #111111);
-  background-image: linear-gradient(to bottom, #222222, #111111);
-  background-repeat: repeat-x;
-  border-color: #252525;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0); 
-    
+    background-image: -moz-linear-gradient(top, #222222, #111111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    background-image: -o-linear-gradient(top, #222222, #111111);
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0); 
+
+}
+#resumeNav{
+    display:none;
+
+}
+#toggleResumeNav{
+    padding-right: 250px;
+}
+.title1{
+    margin-top:125px;
+    font-size:300%;
+}
+/*end General Resume CSS*/
+
+
+/*Summary CSS*/
+#summaryDiv{
+    font-family: "Times New Roman", Times, serif;
+    color: #BDBDBD;
+    text-shadow: 2px 2px 5px rgba(0, 8, 255, 0.35);
+    background-image: url("../img/7452868156_85c6d67612_k.jpg");
+    background-size: cover;
+    font-size: large;
+
+}
+#contentDiv2Row1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.overlayTextSummary{
+    background:rgba(46, 46, 46, 0.75);
+    border-radius: 4px;
+    padding:5px;
+}
+#summaryDiv li{
+    list-style-position: inside;
+}
+#summaryDiv li:hover {
+    transition: all 1s ease;
+    color: #111111;
+    background-color: #cccccc;
+    border-radius: 5px;
+    height:100%;
+    font-size: larger;
+}
+
+/*end summary css*/
+
+
+
+/*education CSS*/
+#educationDiv{
+    display:none;
+    text-shadow: 2px 2px 5px rgba(55, 62, 14, 0.75);
+    color: #E6DBBF;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+    font-size: medium;
+    background-position: center;
+    background-image: url("../img/8162079297_b6a4a91d39_k.jpg");
+    background-size: cover;
+
+}
+.overlayTextEducation{
+    background:rgba(126, 108, 93, 0.4);
+    border-radius: 4px;
+    padding:5px;
+}
+#educationDiv li{
+    list-style-position: inside;
+}
+
+/*end education css*/
+
+
+/*Related Work CSS*/
+#relatedWorkDiv{
+    display:none;
+    background-image: url("../img/8979118188_40713e1dc7_k.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Impact, Charcoal, sans-serif;
+    color: #2C2B33;
+    text-shadow: 2px 2px 5px rgba(229, 229, 255, 0.35);
+    font-size: large;
+
+}
+.title2{
+    margin-top:150px;
+    font-size:400%;
+}
+/*//related work table*/
+.hoverTable2{
+    width:100%;
+    font-size: small;
+}
+
+.hoverTable2 td{ 
+    padding:10px 20px 10px 20px; 
+    border-style:none;
+}
+
+.hoverTable2 tr{
+    transition: all 1s ease;
+    background:rgba(46, 46, 46, 0.75);
+    height:100px;
+}
+
+.hoverTable2 tr:hover {
+    color:black !important;
+    transition: all 1s ease;
+    background-color: #cccccc !important;
+    height:100%;
+    font-size: large;
+
+}
+
+#theader2{
+    color: #000000;
+    background:rgba(250, 250, 250, 0.61);
+    border: 1px solid black;
+    letter-spacing: 5px;
+
+}
+
+.tableCSS2{ 
+    color: #8C9CB1;
+    -webkit-box-shadow: -8px -6px 42px 27px rgba(0,0,0,0.89);
+    -moz-box-shadow: -8px -6px 42px 27px rgba(0,0,0,0.89);
+    box-shadow: -8px -6px 42px 27px rgba(0,0,0,0.89);
+    width: 75% !important;
+    border: 1px solid black;
+}
+
+#relatedWorkDiv tr:nth-child(even) {
+    /*background:rgba(46, 46, 46, 0.75);*/
+}
+
+#relatedWorkDiv li{
+    list-style-position: inside;
+}
+/*.overlayTextRelatedWork{
+    background:rgba(93, 65, 33, 0.75);
+    border-radius: 4px;
+    padding:5px;
+}*/
+
+
+/*end related work css*/
+
+/*Tech Css*/
+#technologyDiv {
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.61);
+    color:#E8C087;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+    display:none;
+    background-image: url("../img/799314036_bcd61ba029_b.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#myCarousel .item{
+    font-size: large;
+    border-radius: 10px;
+    /*background-color: #3E1700;*/
+    background:rgba(62, 23, 0, 0.75);
+}
+
+#myCarousel .carousel-indicators {
+    bottom:-50px;
+}
+
+/*end tech css*/
+/*Other Work CSS*/
+#otherWorkDiv{
+    display:none;
+    background-image: url("../img/21591845853_35477d5e62_k.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.title3{
+    color: #08c;
+    margin-top:125px;
+    font-size:400%;
+    /*    background:rgba(100,100,100, 0.50);*/
+    border-radius: 10px;
+    box-shadow: 15px 15px 25px 15px #172929;
+}
+#otherWorkDiv li{
+    list-style-position: inside;
+}
+.hoverTable{
+    width:100%;
+    font-size: x-small;
+    /*border-collapse:collapse;*/ 
+}
+.hoverTable td{ 
+    padding:10px 20px 10px 20px; 
+    border-style:none;
+}
+/* Define the default color for all the table rows */
+.hoverTable tr{
+    transition: all 1s ease;
+    background: #102C33;
+    height:100px;
+
+}
+/* Define the hover highlight color for the table row */
+.hoverTable tr:hover {
+    transition: all 1s ease;
+    color: #111111;
+    background-color: #cccccc;
+    height:100%;
+    font-size: large;
+}
+
+#thead1{
+    color:#111111;
+    background: #197B85;
+
+
+}
+
+.tableCSS{
+    box-shadow: 15px 15px 30px 15px #98B5B0;
+    width: 75% !important;
+    color: #cccccc;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #172929;
+}
+/*end other work css*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#apprenticeUl, #higherEducationUl,#onlineUl,#certUl{
+    display:none;
 }

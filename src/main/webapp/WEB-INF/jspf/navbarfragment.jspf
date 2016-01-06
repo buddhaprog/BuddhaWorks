@@ -25,7 +25,7 @@
                         <li><a href="${pageContext.request.contextPath}/jsreactiontester">JS reactionTester</a></li>-->
                     </ul>
                 </li>
-                 <li class="dropdown">
+                <li class="dropdown">
                     <a href="#" class= "dropdown-toggle" data-toggle= "dropdown" role="button">examples <span class="caret"></span></a>
                     <ul class="dropdown-menu" id="static-pages" role="menu">
                         <li><a href="${pageContext.request.contextPath}/bbcDupe">CSS bbcDupe</a></li>
@@ -35,6 +35,12 @@
                         <li><a href="http://buddhaworks.org/weatherphp.php">Php Weather Scraper</a></li>
                         <li><a href="${pageContext.request.contextPath}/bootStrapPage">BootStrap</a></li>
                         <li><a href="${pageContext.request.contextPath}/bootStrapPageExample1">BootStrap Example 1</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class= "dropdown-toggle" data-toggle= "dropdown" role="button">Code Katas <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="static-pages" role="menu">
+                        <li><a href="${pageContext.request.contextPath}/babySitterKata">Baby Sitter Kata</a></li>
                     </ul>
                 </li>
                 <li class="admin dropdown">
@@ -66,11 +72,11 @@
                         </ul>-->
             <!--</sec:authorize>-->
             <div class="nav navbar-right">
-                <ul class="nav navbar-nav">
+<!--                <ul class="nav navbar-nav">
                     <li><a class="" href="${pageContext.request.contextPath}/loginpage">Login</a></li>
                     <li role="presentation">
                         <a href="${pageContext.request.contextPath}/j_spring_security_logout">Log Out</a></li>
-                </ul>    
+                </ul>    -->
 <!--                <form action="${pageContext.request.contextPath}/searchresultpage" class="navbar-form navbar-right" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
