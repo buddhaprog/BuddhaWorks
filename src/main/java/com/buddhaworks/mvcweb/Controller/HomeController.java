@@ -47,8 +47,8 @@ public class HomeController {
     public String displayBootStrapPageExample1() {
         return "bootStrapPageExample1";
     }
-    @RequestMapping(value={"/babySitterKata"}, method=RequestMethod.GET)
-    public String displaybabySitterKata() {
-        return "babySitterKata";
+    @RequestMapping(value={"/katas"}, method=RequestMethod.GET)
+    public String displaykatas() {
+        return "katas";
     }
 }
