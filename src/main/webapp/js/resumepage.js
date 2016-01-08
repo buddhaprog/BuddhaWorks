@@ -78,14 +78,14 @@ $(document).ready(function () {
         $("#certUl").slideDown();
     });
 
-    $('#resumeDownload').click(downloadResume);
-
-//        window.location.href= "downloadableFiles/RHresumeNR.pdf";
-        
-    
-               
+//    $('#resumeDownload').click(function(){
+//
+//        window.location.href= "https://drive.google.com/file/d/0B_FKikoLw4eqX2xaaTVwd1g5RWc/view?ths=true";
+//        
+//   
+//         });      
 
 });
-function downloadResume(url){
-    window.location.href="downloadableFiles/RHresumeNR.pdf";
-}
+//function downloadResume(url){
+//    window.location.href="downloadableFiles/RHresumeNR.pdf";
+//}

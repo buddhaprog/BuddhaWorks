@@ -25,7 +25,7 @@
                 <li><a id="toggleRelatedWorkNav" href="#relatedWorkDiv">Programming Related Experience</a></li>
                 <li><a id="toggleOtherWorkNav" href="#otherWorkDiv">Work History</a></li>
                 <li><a id="toggleEducationNav" href="#educationDiv">Education</a></li>
-                <li> <a id="resumeDownload"><img src="img/pdf.png" alt="PDF"></a></li>
+                <li> <a id="resumeDownload" href="https://drive.google.com/file/d/0B_FKikoLw4eqX2xaaTVwd1g5RWc/view" target="_blank"><img src="img/pdf.png" alt="PDF"></a></li>
             </ul>
         </div>
     </nav>
@@ -41,8 +41,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3" id="contentDiv2Row1">
                 <h1 class="marginTop"> Professional Summary</h1>
-                
-                
+               
                 <p class="lead marginTop"></p>
                 <div class="overlayTextSummary marginTopMore">
                     <ul>
