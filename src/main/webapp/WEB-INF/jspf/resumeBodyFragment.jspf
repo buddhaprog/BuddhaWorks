@@ -6,7 +6,9 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a href="${pageContext.request.contextPath}/homepage" class="navbar-brand navbrand1">BuddhaWorks</a>
+                
             </div>
+           
             <div class="collapse navbar-collapse" id="bootExampleNav">
                 <div class="collapse navbar-collapse pull-right scrollSpyNav">
                     <ul class="nav navbar-nav">  
@@ -17,11 +19,13 @@
         </div>
         <div id="resumeNav">
             <ul class="nav navbar-nav pull-right">
+                
                 <li><a id="toggleSummaryNav" href="#summaryDiv">Resume Summary</a></li>
                 <li><a id="toggleTechnologyNav" href="#technologyDiv">Technology</a></li>
                 <li><a id="toggleRelatedWorkNav" href="#relatedWorkDiv">Programming Related Experience</a></li>
                 <li><a id="toggleOtherWorkNav" href="#otherWorkDiv">Work History</a></li>
                 <li><a id="toggleEducationNav" href="#educationDiv">Education</a></li>
+                <li> <a id="resumeDownload"><img src="img/pdf.png" alt="PDF"></a></li>
             </ul>
         </div>
     </nav>
@@ -29,11 +33,16 @@
 
 
 <div class="container-fluid wideMe" id="contentContainer1">
-
+ 
+               
+                
+                    
     <div class="contentDiv2 container-fluid" id="summaryDiv">
         <div class="row">
             <div class="col-md-6 col-md-offset-3" id="contentDiv2Row1">
                 <h1 class="marginTop"> Professional Summary</h1>
+                
+                
                 <p class="lead marginTop"></p>
                 <div class="overlayTextSummary marginTopMore">
                     <ul>
@@ -191,7 +200,7 @@
             </div>
         </div>
     </div> 
-    
+
     <div class="contentDiv2 container-fluid" id="otherWorkDiv">
         <div class="row center">
             <h1 class="title3 marginTopMore col-lg-4 col-md-offset-2">Work History</h1>

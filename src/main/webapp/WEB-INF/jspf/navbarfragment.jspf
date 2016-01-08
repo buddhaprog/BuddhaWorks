@@ -40,7 +40,7 @@
                 <li class="dropdown">
                     <a href="#" class= "dropdown-toggle" data-toggle= "dropdown" role="button">Code Katas <span class="caret"></span></a>
                     <ul class="dropdown-menu" id="static-pages" role="menu">
-                        <li><a href="${pageContext.request.contextPath}/babySitterKata">Baby Sitter Kata</a></li>
+                        <li><a href="${pageContext.request.contextPath}/katas">katas</a></li>
                     </ul>
                 </li>
                 <li class="admin dropdown">

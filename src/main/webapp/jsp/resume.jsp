@@ -25,7 +25,11 @@
     <body>
         <%@include file="../WEB-INF/jspf/resumeBodyFragment.jspf"%>
         <!-- Placed at the end of the document so the pages load faster -->
-        <%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>
+        <%--<%@include file="../WEB-INF/jspf/scriptFragment.jspf"%>--%>
+        <script src="${pageContext.request.contextPath}/js/jquery-2.1.4.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/moment.js"></script>
+        <script src="${pageContext.request.contextPath}/js/bootstrap-datetimepicker.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/resumepage.js"></script>
         <script src="${pageContext.request.contextPath}/js/animsition.min.js"></script>
     </body>

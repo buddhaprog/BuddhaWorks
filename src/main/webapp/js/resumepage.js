@@ -78,6 +78,14 @@ $(document).ready(function () {
         $("#certUl").slideDown();
     });
 
+    $('#resumeDownload').click(downloadResume);
 
+//        window.location.href= "downloadableFiles/RHresumeNR.pdf";
+        
+    
+               
 
 });
+function downloadResume(url){
+    window.location.href="downloadableFiles/RHresumeNR.pdf";
+}

@@ -194,5 +194,3 @@ document.getElementById('textCreator').onclick = function () {
             'emptyDiv').innerHTML = "<ul><li>Cat</li><li>Dog</li></ul>";
 
 };
-
-

@@ -1,0 +1,127 @@
+/*General CSS for Resume Page*/
+.contentDiv{
+    height:900px;
+}
+
+.navbrand1{
+    font-size: large;
+    font-weight: bold;
+}
+
+#bootExampleNav{
+    padding:1px 1px 1px 1px;
+}
+.wideMe{
+    padding-left:0px;
+    padding-right:0px;
+    width:100%;
+}
+#contentContainer1{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+#contentDiv2Row1 h1{
+    font-size:350%;
+    font-weight: bold;
+} 
+#contentDiv4Row1{
+    margin-top: 100px;
+    text-align: center;
+
+}
+#contentDiv4Row1 h1{
+    font-size:350%;
+    font-weight: bold;
+} 
+.overlayText{
+    background-image: url("../img/old_paper_stock_02_by_ftourini-d48ubt0.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin:5px;
+
+}
+.boldThis{
+    font-weight: bold;
+    font-size: 125%;
+}
+.marginTop{
+    margin-top:25px;
+}
+.center{
+    text-align: center;
+}
+
+.littlePad{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.marginTopMore{
+    margin-top: 75px;
+}
+
+.footer{
+    background-color: #1b1b1b;
+    background-image: -moz-linear-gradient(top, #222222, #111111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    background-image: -o-linear-gradient(top, #222222, #111111);
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0); 
+
+}
+#kataNav{
+    display:none;
+
+}
+#toggleKataNav{
+    padding-right: 250px;
+}
+.title1{
+    margin-top:125px;
+    font-size:300%;
+}
+/*end General Resume CSS*/
+/*babysitter Css*/
+#babySitterDiv {
+    text-shadow: 2px 2px 5px rgba(151, 40, 0, 0.61);
+    color:#4B0A00;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+    /*display:none;*/
+    background-image: url("../img/20782925976_a63f8a1586_k_1.jpg");
+    background-size: cover;
+    background-position: center;
+    list-style-position: inside;
+}
+#babyjUnit, #babyJava{
+    display:none;
+    
+    
+}
+#codeBlock{
+    
+    overflow: auto;
+    float:right;
+    margin-top: 200px;
+    border-radius: 10px;
+    
+}
+.code{
+    border-style: groove;
+   
+}
+
+
+
+
+
+/*end babySitterDiv css*/
+
+
