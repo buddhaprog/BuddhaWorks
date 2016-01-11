@@ -123,5 +123,21 @@
 
 
 /*end babySitterDiv css*/
-
-
+/*conway css*/
+#conwayDiv {
+    text-shadow: 2px 2px 5px rgba(151, 40, 0, 0.61);
+    color:#4B0A00;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+    /*display:none;*/
+    background-image: url("../img/20782925976_a63f8a1586_k_1.jpg");
+    background-size: cover;
+    background-position: center;
+    list-style-position: inside;
+}
+#conwayjUnit, #conwayJava{
+    display:none;
+    
+    
+}
+/*endconway css*/

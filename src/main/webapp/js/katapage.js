@@ -1,7 +1,7 @@
 $(document).ready(function () {
 //sets height to window size on load
     $(".contentDiv2").css("min-height", $(window).height());
-$("#codeBlock").css("max-height", $(".contentDiv2").height()*.75);
+    $("#codeBlock").css("max-height", $(".contentDiv2").height() * .75);
 
 //deals with active on nav bar
     $(".nav li").click(function () {
@@ -14,21 +14,22 @@ $("#codeBlock").css("max-height", $(".contentDiv2").height()*.75);
         $("#kataNav").toggle();
     });
 
-    $("#toggleSummaryNav").click(function () {
+    $("#togglebabySitterKataNav").click(function () {
         $("#babySitterDiv").show();
-//        $("#technologyDiv").hide();
+        $("#conwayDiv").hide();
 //        $("#relatedWorkDiv").hide();
 //        $("#otherWorkDiv").hide();
 //        $("#educationDiv").hide();
-
+        $("#kataNav").toggle();
     });
-//    $("#toggleTechnologyNav").click(function () {
-//        $("#technologyDiv").show();
-//        $("#summaryDiv").hide();
+    $("#toggleConwayNav").click(function () {
+        $("#conwayDiv").show();
+        $("#babySitterDiv").hide();
 //        $("#relatedWorkDiv").hide();
 //        $("#otherWorkDiv").hide();
 //        $("#educationDiv").hide();
-//    });
+        $("#kataNav").toggle();
+    });
 //    $("#toggleRelatedWorkNav").click(function () {
 //        $("#relatedWorkDiv").show();
 //        $("#technologyDiv").hide();
@@ -58,13 +59,21 @@ $("#codeBlock").css("max-height", $(".contentDiv2").height()*.75);
     $("#babyHeadJunit").hover(function () {
         $("#babyJava").slideUp();
         $("#babyjUnit").slideDown();
-        
+
     });
     $("#babyHeadJava").hover(function () {
         $("#babyJava").slideDown();
         $("#babyjUnit").slideUp();
     });
+    $("#conwayHeadJunit").hover(function () {
+        $("#conwayJava").slideUp();
+        $("#conwayjUnit").slideDown();
 
+    });
+    $("#conwayHeadJava").hover(function () {
+        $("#conwayJava").slideDown();
+        $("#conwayjUnit").slideUp();
+    });
 
 
 });

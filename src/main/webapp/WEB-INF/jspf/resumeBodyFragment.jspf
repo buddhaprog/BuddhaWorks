@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a href="${pageContext.request.contextPath}/homepage" class="navbar-brand navbrand1">BuddhaWorks</a>
-                
+                <a id="resumeDownload" href="https://drive.google.com/file/d/0B_FKikoLw4eqX2xaaTVwd1g5RWc/view?usp=sharing" target="_blank">PDF Available<img src="img/pdf.png" alt="PDF" id="pdfIcon"></a>
             </div>
            
             <div class="collapse navbar-collapse" id="bootExampleNav">
@@ -25,7 +25,7 @@
                 <li><a id="toggleRelatedWorkNav" href="#relatedWorkDiv">Programming Related Experience</a></li>
                 <li><a id="toggleOtherWorkNav" href="#otherWorkDiv">Work History</a></li>
                 <li><a id="toggleEducationNav" href="#educationDiv">Education</a></li>
-                <li> <a id="resumeDownload" href="https://drive.google.com/file/d/0B_FKikoLw4eqX2xaaTVwd1g5RWc/view" target="_blank"><img src="img/pdf.png" alt="PDF"></a></li>
+                
             </ul>
         </div>
     </nav>

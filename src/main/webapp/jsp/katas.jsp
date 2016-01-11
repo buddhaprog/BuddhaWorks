@@ -41,10 +41,10 @@
                 <div id="kataNav">
                     <ul class="nav navbar-nav pull-right">
                         <li><a id="togglebabySitterKataNav" href="#babySitterDiv">BabySitterKata</a></li>
-                        <!--                <li><a id="toggleTechnologyNav" href="#technologyDiv">Technology</a></li>
-                                        <li><a id="toggleRelatedWorkNav" href="#relatedWorkDiv">Programming Related Experience</a></li>
-                                        <li><a id="toggleOtherWorkNav" href="#otherWorkDiv">Work History</a></li>
-                                        <li><a id="toggleEducationNav" href="#educationDiv">Education</a></li>-->
+                        <li><a id="toggleConwayNav" href="#conwayDiv">Conway's Game of Life</a></li><!--
+                        <li><a id="toggleRelatedWorkNav" href="#relatedWorkDiv">Programming Related Experience</a></li>
+                        <li><a id="toggleOtherWorkNav" href="#otherWorkDiv">Work History</a></li>
+                        <li><a id="toggleEducationNav" href="#educationDiv">Education</a></li>-->
                     </ul>
                 </div>
             </nav>
@@ -53,7 +53,7 @@
 
         <div class="container-fluid wideMe" id="contentContainer1">
             <%@include file="../WEB-INF/jspf/babySitterKatafragment.jspf"%>
-            
+            <%@include file="../WEB-INF/jspf/conwayKatafragment.jspf"%>
 
 
 

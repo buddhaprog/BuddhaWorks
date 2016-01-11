@@ -1,0 +1,386 @@
+<div class="contentDiv2 container-fluid" id="conwayDiv">
+    <div class="row">
+        <div class="col-md-4 overlayText" id="contentDiv4Row1">
+            <h1 class="marginTop"> Conway's Game of Life</h1>
+            <ul>
+                <li>Any live cell with fewer than two live neighbors dies, as if caused by under-population.</li>
+                <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
+                <li>Any live cell with more than three live neighbors dies, as if by over-population.</li>
+                <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>
+                
+            </ul>
+            <!--        </div>
+                </div>
+                <div class="row">
+                    <div class="overlayText col-md-4">-->
+            <div class="col-md-offset-2">
+                <h2 class="marginTop" id="conwayHeadJunit"> jUnit Test</h2>
+                <h2 class="marginTop" id="conwayHeadJava"> Java</h2>
+            </div>
+        </div>
+        <div id="codeBlock" class="col-md-6">
+            <div id="conwayjUnit" class="code ">
+                <pre><code>
+              package conway;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author Rob Helvey
+ */
+public class ConwayTest {
+
+    public ConwayTest() {
+    }
+
+    @BeforeClass
+    public static void setUpClass() {
+    }
+
+    @AfterClass
+    public static void tearDownClass() {
+    }
+
+    @Before
+    public void setUp() {
+    }
+
+    @After
+    public void tearDown() {
+    }
+
+    /**
+     * Test of isValidStartSize method, of class Conway.
+     */
+    @Test
+    public void testIsValidStartSize() {
+        System.out.println("isValidStartSize");
+        Conway conway = new Conway();
+        assertEquals(false, conway.isValidStartSize(-20)); //way outside
+        assertEquals(false, conway.isValidStartSize(0));  // it's zero
+        assertEquals(false, conway.isValidStartSize(1000)); //way outside
+        assertEquals(true, conway.isValidStartSize(1)); //border
+        assertEquals(true, conway.isValidStartSize(50));  // middle
+        assertEquals(true, conway.isValidStartSize(25)); //border
+    }
+
+    /**
+     * Test of isValidEndSize method, of class Conway.
+     */
+    @Test
+    public void testIsValidEndSize() {
+        System.out.println("isValidEndSize");
+        Conway conway = new Conway();
+        assertEquals(false, conway.isValidEndSize(-20)); //way outside
+        assertEquals(false, conway.isValidEndSize(0));  // it's zero
+        assertEquals(false, conway.isValidEndSize(1000)); //way outside
+        assertEquals(true, conway.isValidEndSize(1)); //border
+        assertEquals(true, conway.isValidEndSize(50));  // middle
+        assertEquals(true, conway.isValidEndSize(25)); //border
+    }
+
+    /**
+     * Test of isValidSize method, of class Conway.
+     */
+    @Test
+    public void testIsValidSize() {
+        System.out.println("isValidSize");
+        Conway conway = new Conway();
+        assertEquals(false, conway.isValidSize(-20)); //way outside
+        assertEquals(false, conway.isValidSize(0));  // it's zero
+        assertEquals(false, conway.isValidSize(1000)); //way outside
+        assertEquals(true, conway.isValidSize(1)); //border
+        assertEquals(true, conway.isValidSize(50));  // middle
+        assertEquals(true, conway.isValidSize(25)); //border
+    }
+
+    /**
+     * Test of life method, of class Conway.
+     */
+    @Test
+    public void testLife() {
+        System.out.println("life");
+
+        String[] dish1
+                =
+                {
+                    "...o....",
+                    "...oo...",
+                    "...o....",
+                    "...oo...",
+                    "...o....",
+                    "...o..o.",
+                };
+        String[] expResult1
+                =
+                {
+                    "...oo...",
+                    "..ooo...",
+                    "..o.....",
+                    "..ooo...",
+                    "..oo....",
+                    "........"
+                };
+        String[] result1 = Conway.life(dish1);
+        assertArrayEquals(expResult1, result1);
+
+        String[] dish2
+                =
+                {
+                    "...oo...",
+                    "..ooo...",
+                    "..o.....",
+                    "..ooo...",
+                    "..oo....",
+                    "........"
+                };
+        String[] expResult2
+                =
+                {
+                    "..o.o...",
+                    "..o.o...",
+                    ".o......",
+                    ".o..o...",
+                    "..o.o...",
+                    "........"
+                };
+        String[] result2 = Conway.life(dish2);
+        assertArrayEquals(expResult2, result2);
+
+        String[] dish3
+                =
+                {
+                    "..o.o...",
+                    "..o.o...",
+                    ".o......",
+                    ".o..o...",
+                    "..o.o...",
+                    "........"
+                };
+        String[] expResult3
+                =
+                {
+                    "........",
+                    ".oo.....",
+                    ".ooo....",
+                    ".ooo....",
+                    "...o....",
+                    "........"
+                };
+        String[] result3 = Conway.life(dish3);
+        assertArrayEquals(expResult3, result3);
+
+    }
+
+    /**
+     * Test of getNeighbors method, of class Conway.
+     */
+    @Test
+    public void testGetNeighbors() {
+        System.out.println("getNeighbors");
+        String above = "";
+        String same = "";
+        String below = "";
+        int expResult = 0;
+        int result = Conway.getNeighbors(above, same, below);
+        assertEquals(expResult, result);
+
+        assertEquals(3, Conway.getNeighbors("o", "o", "o"));
+        assertEquals(0, Conway.getNeighbors(".", ".", "."));
+        assertEquals(1, Conway.getNeighbors(".", ".", "o"));
+        assertEquals(2, Conway.getNeighbors(".", "o", "o"));
+        assertEquals(2, Conway.getNeighbors("o", "o", "."));
+        assertEquals(1, Conway.getNeighbors("o", ".", "."));
+        assertEquals(1, Conway.getNeighbors(".", "o", "."));
+        assertEquals(2, Conway.getNeighbors("o", ".", "o"));
+
+    }
+
+}
+
+</code></pre>
+            </div>
+
+            <div id="conwayJava" class="code ">
+                <pre><code> package conway;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Rob Helvey
+ */
+public class Conway {
+
+    public int userStartSize;
+    public int userEndSize;
+    public int smallestStartSize = 1;
+    public int largestEndSize = 50;
+
+    public boolean isValidStartSize(int userStartSize) {
+        return !(userStartSize < this.smallestStartSize || userStartSize > this.largestEndSize);
+    }
+
+    public boolean isValidEndSize(int userEndSize) {
+        //for optional grid sizing to be done later
+        return !(userEndSize < this.smallestStartSize || userEndSize > this.largestEndSize);
+    }
+
+    public boolean isValidSize(int size) {
+        //for optional grid sizing to be done later
+        return !(size <= 0 || size > 50);
+    }
+
+    public static void main(String[] args) {
+        Conway conway = new Conway();
+        boolean isValidStartSize = false;
+        boolean isValidEndSize = false;
+        boolean isValidSize = false;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Welcome to Rob's version of Conway's Game of Life!");
+
+        while (!isValidStartSize)
+        {
+            {
+                System.out.println("Please Enter how many generations you want to see(between 0-50)");
+
+                while (!sc.hasNextInt())
+                {
+                    String input = sc.next();
+                    System.out.println("Sorry " + input + " is not a valid size, please try again");
+                }
+                conway.userStartSize = sc.nextInt();
+                isValidStartSize = conway.isValidSize(conway.userStartSize);
+                if (isValidStartSize)
+                {
+                    isValidStartSize = conway.isValidSize(conway.userStartSize);
+                }
+            }
+            System.out.println("Number of generations choosen: " + conway.userStartSize);
+
+        }
+        String[] dish =
+        {
+            "...o....",
+            "...oo...",
+            "...o....",
+            "...oo...",
+            "...o....",
+            "...o..o.",
+        };
+        int gens = conway.userStartSize + 1;
+        for (int i = 0; i < gens; i++)
+        {
+            System.out.println("Generation " + i + ":");
+            print(dish);
+            dish = life(dish);
+        }
+    }
+
+    public static String[] life(String[] dish) {
+        String[] newGen = new String[dish.length];
+        for (int row = 0; row < dish.length; row++)
+        {
+            newGen[row] = "";
+            for (int i = 0; i < dish[row].length(); i++)
+            {
+                String above = "";
+                String same = "";
+                String below = "";
+                if (i == 0)
+                {
+                    above = (row == 0) ? null : dish[row - 1].substring(i,
+                            i + 2);
+                    same = dish[row].substring(i + 1, i + 2);
+                    below = (row == dish.length - 1) ? null : dish[row + 1]
+                            .substring(i, i + 2);
+                } else if (i == dish[row].length() - 1)
+                {
+                    above = (row == 0) ? null : dish[row - 1].substring(i - 1,
+                            i + 1);
+                    same = dish[row].substring(i - 1, i);
+                    below = (row == dish.length - 1) ? null : dish[row + 1]
+                            .substring(i - 1, i + 1);
+                } else
+                {
+                    above = (row == 0) ? null : dish[row - 1].substring(i - 1,
+                            i + 2);
+                    same = dish[row].substring(i - 1, i)
+                            + dish[row].substring(i + 1, i + 2);
+                    below = (row == dish.length - 1) ? null : dish[row + 1]
+                            .substring(i - 1, i + 2);
+                }
+                int neighbors = getNeighbors(above, same, below);
+                if (neighbors < 2 || neighbors > 3)
+                {
+                    newGen[row] += ".";
+                } else if (neighbors == 3)
+                {
+                    newGen[row] += "o";
+                } else
+                {
+                    newGen[row] += dish[row].charAt(i);
+                }
+            }
+        }
+        return newGen;
+    }
+
+    public static int getNeighbors(String above, String same, String below) {
+        int ans = 0;
+        if (above != null)
+        {
+            for (char x : above.toCharArray())
+            {
+                if (x == 'o')
+                {
+                    ans++;
+                }
+            }
+        }
+        for (char x : same.toCharArray())
+        {
+            if (x == 'o')
+            {
+                ans++;
+            }
+        }
+        if (below != null)
+        {
+            for (char x : below.toCharArray())
+            {
+                if (x == 'o')
+                {
+                    ans++;
+                }
+            }
+        }
+        return ans;
+    }
+
+    public static void print(String[] dish) {
+        for (String s : dish)
+        {
+            System.out.println(s);
+        }
+    }
+}</code></pre>
+            </div>
+        </div>
+    </div>
+<!--    <div class="bottomPadding"></div>-->
+</div>
+
+
+
+
+
+

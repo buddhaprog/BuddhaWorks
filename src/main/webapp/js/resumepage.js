@@ -19,6 +19,7 @@ $(document).ready(function () {
         $("#relatedWorkDiv").hide();
         $("#otherWorkDiv").hide();
         $("#educationDiv").hide();
+        $("#resumeNav").toggle();
 
     });
     $("#toggleTechnologyNav").click(function () {
@@ -27,6 +28,7 @@ $(document).ready(function () {
         $("#relatedWorkDiv").hide();
         $("#otherWorkDiv").hide();
         $("#educationDiv").hide();
+        $("#resumeNav").toggle();
     });
     $("#toggleRelatedWorkNav").click(function () {
         $("#relatedWorkDiv").show();
@@ -34,6 +36,7 @@ $(document).ready(function () {
         $("#summaryDiv").hide();
         $("#otherWorkDiv").hide();
         $("#educationDiv").hide();
+        $("#resumeNav").toggle();
     });
     $("#toggleOtherWorkNav").click(function () {
         $("#otherWorkDiv").show();
@@ -41,6 +44,7 @@ $(document).ready(function () {
         $("#summaryDiv").hide();
         $("#relatedWorkDiv").hide();
         $("#educationDiv").hide();
+        $("#resumeNav").toggle();
 
     });
     $("#toggleEducationNav").click(function () {
@@ -49,6 +53,7 @@ $(document).ready(function () {
         $("#technologyDiv").hide();
         $("#summaryDiv").hide();
         $("#relatedWorkDiv").hide();
+        $("#resumeNav").toggle();
 
     });
 
