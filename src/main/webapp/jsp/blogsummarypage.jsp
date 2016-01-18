@@ -14,9 +14,7 @@
         <link href="${pageContext.request.contextPath}/css/buddhaworkstheme.css" rel="stylesheet">
     </head>
     <body>
-        <div id="bg">
-            <img src="${pageContext.request.contextPath}/img/templebellshapetreyratcliff.jpg" alt="">
-        </div>
+
         <div>
         <%@include file="../WEB-INF/jspf/navbarfragment.jspf"%>
         <%@include file="../WEB-INF/jspf/blogsummaryfragment.jspf"%>
